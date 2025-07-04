@@ -41,3 +41,29 @@ Ali is 1.75 m tall (175.0 cm).
 Practice type conversion, arithmetic operations, and f‑string formatting.
 
 ---
+### Exercise 03‑03 – type(), safe str→int/float conversion, error handling
+
+**Description:**  
+Convert three string variables to numeric types, handling errors safely.
+
+| input variable | value      | desired conversion | output variable |
+|----------------|------------|--------------------|-----------------|
+| `s_int`        | `"42"`     | `int()`            | `n_int`         |
+| `s_float`      | `"3.14159"`| `float()`          | `n_float`       |
+| `s_word`       | `"Python"` | `int()` → *error*  | `n_word = None` |
+
+Print a report like:
+
+```python
+'42' → 42 (type: <class 'int'>)
+'3.14159' → 3.14159 (type: <class 'float'>)
+'Python' → could not convert, stored None
+Results list: [42, 3.14159, None]
+```
+
+**Goal:**  
+• Practise `type()` and `isinstance()`  
+• Perform safe `str → int/float` conversions with `try/except`  
+• Understand how to handle conversion errors and use `None` as a placeholder.
+
+---
