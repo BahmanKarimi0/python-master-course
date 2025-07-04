@@ -11,3 +11,14 @@ In this chapter we lay the bedrock for every Python program:
 Mastering these tiny building blocks early prevents countless bugs later, so take your time and make sure every concept feels intuitive before moving on.
 
 ---
+### Exercise 03‑01 – Basic variables & f-string
+
+**Description:**  
+Define three variables — a name (`str`), age (`int`), and height (`float`).  
+Use an `f-string` to display a sentence like:  
+> My name is Ali, I am 25 years old and 1.75 meters tall.
+
+**Goal:**  
+Practice defining basic variables, using type annotations, and formatting output with f-strings.
+
+---
