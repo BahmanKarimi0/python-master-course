@@ -22,3 +22,22 @@ Use an `f-string` to display a sentence like:
 Practice defining basic variables, using type annotations, and formatting output with f-strings.
 
 ---
+### Exercise 03‑02 – Type conversion and basic arithmetic
+
+**Description:**  
+Define variables for a person's name (`str`), age in years (`int`), and height in meters (`float`).  
+Then compute and store:
+
+- `age_months`: age × 12 as an `int`
+- `height_cm`: height × 100 as a `float`, rounded to 1 decimal place
+
+Finally, print:
+```python
+Ali is 25 years old (300 months).
+Ali is 1.75 m tall (175.0 cm).
+```
+
+**Goal:**  
+Practice type conversion, arithmetic operations, and f‑string formatting.
+
+---
