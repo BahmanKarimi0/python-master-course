@@ -67,3 +67,29 @@ Results list: [42, 3.14159, None]
 • Understand how to handle conversion errors and use `None` as a placeholder.
 
 ---
+### Exercise 03‑04 – Arithmetic operations, rounding, formatted output
+
+**Description:**  
+Given a rectangle with the following values:
+
+- `length = 5.6789` meters
+- `width = 2.3456` meters
+- `price_per_m2 = 850,000` Rials
+
+Perform the following:
+
+- Compute `area`, `perimeter`, and a `rounded` version of area.
+- Compute the `cost` in Rials and in millions (rounded to 2 decimals).
+- Compute the side of a square with the same area, and convert it to centimeters with one decimal.
+- Print all results using properly formatted output with `f-strings`.
+
+**Sample Output:**
+```python
+Area : 13.3235 m² (rounded: 13.324 m²)
+Perimeter : 16.048998 m
+Cost : 11,325,004.8 Rials ≈ 11.32 million Rials
+Equivalent square side: 3.65 m (365.2 cm)
+```
+
+**Goal:**  
+Practice using arithmetic operators, `round()`, formatted floats, and readable output formatting.
