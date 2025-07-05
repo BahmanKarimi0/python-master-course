@@ -93,3 +93,33 @@ Equivalent square side: 3.65 m (365.2 cm)
 
 **Goal:**  
 Practice using arithmetic operators, `round()`, formatted floats, and readable output formatting.
+
+---
+### Exercise 03‑05 – `isinstance()`, runtime type inspection, dynamic typing
+
+**Description:**  
+Track changes in the type and value of a dynamic variable `value` through three transformation steps:
+
+1. Assign a string: `"123"`
+2. Try to convert it to integer using `int()`, handle failure with `try/except`
+3. Convert to a list of characters using `list(str(...))`
+
+After each step:
+- Print the value and its current type
+- Append a tuple `(value, type)` to a list called `history`
+
+**Sample Output:**
+```python
+step 1 → value = '123' (type: str)
+step 2 → value = 123 (type: int)
+step 3 → value = ['1', '2', '3'] (type: list)
+History: [('123', <class 'str'>), (123, <class 'int'>), (['1', '2', '3'], <class 'list'>)]
+
+```
+
+**Goal:**  
+• Understand Python's dynamic typing  
+• Use `type()` and `isinstance()` effectively  
+• Track runtime transformations in a readable way
+
+---
