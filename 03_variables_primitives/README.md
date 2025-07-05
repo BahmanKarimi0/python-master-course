@@ -181,6 +181,9 @@ Value: {'a': 1}         | Type: dict          | bool(): True     → Will run in
 Value: False            | Type: bool          | bool(): False    → Skipped in if
 Value: True             | Type: bool          | bool(): True     → Will run in if
 ```
+**Goal:**  
+Understand how Python implicitly converts objects to `bool` inside conditionals and identify which values are *truthy* versus *falsy*.
+
 ---
 ### Mini‑Project: BMI Calculator 🧮
 
@@ -198,15 +201,11 @@ Create a BMI calculator that takes the user's height and weight, calculates the 
   - `30+` → Obesity
 
 **Sample Output:**
+```python
 Enter your height in meters (e.g. 1.75): 1.8
 Enter your weight in kilograms (e.g. 70): 72
 
 Your BMI is: 22.22 kg/m²
 Category: Normal weight
-
----
-
-**Goal:**  
-Understand how Python implicitly converts objects to `bool` inside conditionals and identify which values are *truthy* versus *falsy*.
-
+```
 ---
