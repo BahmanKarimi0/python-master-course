@@ -181,6 +181,30 @@ Value: {'a': 1}         | Type: dict          | bool(): True     → Will run in
 Value: False            | Type: bool          | bool(): False    → Skipped in if
 Value: True             | Type: bool          | bool(): True     → Will run in if
 ```
+---
+### Mini‑Project: BMI Calculator 🧮
+
+**Goal:**  
+Create a BMI calculator that takes the user's height and weight, calculates the Body Mass Index (BMI), and classifies it according to WHO standards.
+
+**Features:**
+- Input validation: checks for empty or invalid input
+- Formula used: `BMI = weight / (height ** 2)`
+- Rounded to 2 decimal places
+- Classifies into:
+  - `< 18.5` → Underweight
+  - `18.5–24.9` → Normal weight
+  - `25–29.9` → Overweight
+  - `30+` → Obesity
+
+**Sample Output:**
+Enter your height in meters (e.g. 1.75): 1.8
+Enter your weight in kilograms (e.g. 70): 72
+
+Your BMI is: 22.22 kg/m²
+Category: Normal weight
+
+---
 
 **Goal:**  
 Understand how Python implicitly converts objects to `bool` inside conditionals and identify which values are *truthy* versus *falsy*.
