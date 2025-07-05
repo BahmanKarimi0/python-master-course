@@ -123,3 +123,36 @@ History: [('123', <class 'str'>), (123, <class 'int'>), (['1', '2', '3'], <class
 • Track runtime transformations in a readable way
 
 ---
+### Exercise 03‑06 – Identity (`is`) vs Equality (`==`) and the Singleton `None`
+
+**Description:**  
+This exercise explores:
+
+- The difference between `==` (value equality) and `is` (object identity)
+- Proper comparison with `None` using `is`
+- Memory identity tracking using `id()`
+
+**Steps:**
+
+1. Create two separate lists `a` and `b` with same content.
+2. Compare them using `==` and `is`.
+3. Create a variable `c = None` and compare it with `None` using both `==` and `is`.
+4. Set `a = b` (now both point to the same object).
+5. Recompare `a == b` and `a is b`.
+6. Record the identity values using `id()` and store the result in a dictionary inside a `history` list.
+
+**Sample Output:**
+```python
+a == b → True
+a is b → False
+c == None → True # Not recommended
+c is None → True # Recommended
+a == b → True
+a is b → True
+History: [{'step': 3, 'a_id': 140251357957632, 'b_id': 140251357957632, 'a==b': True, 'a is b': True}]
+```
+
+**Goal:**  
+Understand how Python handles value equality vs. object identity, and practice safe `None` comparison.
+
+---
