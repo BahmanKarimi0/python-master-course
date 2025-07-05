@@ -156,3 +156,33 @@ History: [{'step': 3, 'a_id': 140251357957632, 'b_id': 140251357957632, 'a==b': 
 Understand how Python handles value equality vs. object identity, and practice safe `None` comparison.
 
 ---
+### Exercise 03‑07 – Truthy/Falsy values and conditional execution
+
+**Description:**  
+Build a list of mixed values and, for each element, output:
+
+1. The raw value `repr(val)`
+2. The data type `type(val).__name__`
+3. The boolean evaluation `bool(val)`
+4. Whether an `if val:` block would execute
+
+**Sample Output:**
+```python
+Value: 0                | Type: int           | bool(): False    → Skipped in if
+Value: 1                | Type: int           | bool(): True     → Will run in if
+Value: -1               | Type: int           | bool(): True     → Will run in if
+Value: ''               | Type: str           | bool(): False    → Skipped in if
+Value: 'Hello'          | Type: str           | bool(): True     → Will run in if
+Value: []               | Type: list          | bool(): False    → Skipped in if
+Value: [0]              | Type: list          | bool(): True     → Will run in if
+Value: None             | Type: NoneType      | bool(): False    → Skipped in if
+Value: {}               | Type: dict          | bool(): False    → Skipped in if
+Value: {'a': 1}         | Type: dict          | bool(): True     → Will run in if
+Value: False            | Type: bool          | bool(): False    → Skipped in if
+Value: True             | Type: bool          | bool(): True     → Will run in if
+```
+
+**Goal:**  
+Understand how Python implicitly converts objects to `bool` inside conditionals and identify which values are *truthy* versus *falsy*.
+
+---
