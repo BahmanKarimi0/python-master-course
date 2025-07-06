@@ -25,3 +25,24 @@ Each exercise is carefully designed to build your confidence step-by-step — fr
 > Start slow, think logically, and don’t rush. This chapter is not about speed — it’s about learning to **think like a developer**.
 
 ---
+### Exercise 04‑01 – Basic `if`/`elif`/`else` with Temperature Units
+
+**Description:**  
+This script takes two inputs from the user:
+- A temperature (float)
+- A unit (`C` for Celsius or `F` for Fahrenheit)
+
+Then it classifies the temperature:
+
+- If unit is Celsius (`C`) and temperature > 30 → prints `"Hot in Celsius!"`
+- If unit is Fahrenheit (`F`) and temperature > 86 → prints `"Hot in Fahrenheit!"`
+- Otherwise → prints `"Moderate"`
+- If the unit is invalid or input is missing → prints an error message
+
+**Sample Input/Output:**
+```python
+Enter temperature (e.g. 30): 50
+Enter units (e.g. 'C' for Centigrade of 'F' for Fahrenheit ): c
+Hot in celsius
+```
+---
