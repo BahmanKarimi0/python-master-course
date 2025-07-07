@@ -46,3 +46,25 @@ Enter units (e.g. 'C' for Centigrade of 'F' for Fahrenheit ): c
 Hot in celsius
 ```
 ---
+### Exercise 04‑02 – Nested and Combined Conditions
+
+**Description:**
+
+A simple access control program that checks:
+- Username (must not be empty)
+- Age (must be a positive integer)
+- Admin status (`yes/no`)
+
+**Rules:**
+- If age < 13 → Access denied (too young)
+- If age ≥ 13 and admin → Access granted with admin privileges
+- If age ≥ 13 and not admin → Access granted
+- If any input is invalid → Show appropriate error message
+
+**Sample Run:**
+```python
+Enter your username (e.g. 'Reza'): Ali
+Enter your age (e.g. 30): 14
+Are you admin user (e.g. 'yes'/'no'): yes
+Access granted with admin privileges
+```
