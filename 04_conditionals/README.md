@@ -94,3 +94,27 @@ What is your name? Katherine
 Welcome, long-name user!
 ```
 ---
+### Exercise 04‑04 – Boolean Logic with `and`, `or`, `not`
+
+**Description:**
+
+A simple login simulation that checks:
+- Username and password (must not be empty)
+- Password must be at least 8 characters long
+- If the user didn't choose "remember me", they must enter a valid OTP code (6 digits)
+- Short-circuit evaluation is used to avoid unnecessary checks
+
+**Login rules:**
+- If any of the required inputs are missing → login fails
+- If "remember me" is checked → OTP is not required
+- If "remember me" is not checked → OTP must be 6-digit number
+
+**Sample Run:**
+```python
+Enter your username: Ali
+Enter your password: 12345678
+Remember me? (yes/no): no
+Enter your OTP code: 325481
+✅ Login successful
+```
+---
