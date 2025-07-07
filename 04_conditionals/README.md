@@ -68,3 +68,29 @@ Enter your age (e.g. 30): 14
 Are you admin user (e.g. 'yes'/'no'): yes
 Access granted with admin privileges
 ```
+---
+### Exercise 04‑03 – Ternary Conditional and Input Validation
+
+**Description:**
+
+This program asks the user for their name and prints a welcome message.
+
+- If the name is empty or contains only spaces, it assigns `"Guest"` as default.
+- Then it checks the length of the name:
+  - If it's longer than 5 characters → prints `"Welcome, long-name user!"`
+  - Otherwise → prints `"Welcome!"`
+
+**Python Concepts Used:**
+- Ternary conditional expressions
+- `if ... else` in a single line
+- Input sanitization using `.strip()`
+
+**Sample Run:**
+```pyhton
+What is your name?
+Welcome!
+
+What is your name? Katherine
+Welcome, long-name user!
+```
+---
