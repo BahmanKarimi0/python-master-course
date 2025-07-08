@@ -118,3 +118,21 @@ Enter your OTP code: 325481
 ✅ Login successful
 ```
 ---
+### 🎓 Mini‑Project – Student Score Analyzer & Scholarship Checker
+
+This program checks whether a student:
+- Passed the academic year (average score ≥ 10)
+- Qualifies for a scholarship (average score ≥ 17, discipline score ≥ 90, and extra activities)
+
+It validates all inputs and prints a detailed result message.
+
+#### ✅ Input:
+- Name (non-empty)
+- Average Score (0–20)
+- Discipline Score (0–100)
+- Extra Activity (yes/no)
+
+#### 🎯 Example Output:
+```python
+Ali – Passed (avg: 18.20) – 🏅 Scholarship awarded
+```
