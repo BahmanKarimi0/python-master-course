@@ -51,3 +51,19 @@ Enter a positive number (e.g. 12): 5
 1
 🚀 Liftoff!
 ```
+---
+### Exercise 05‑03 – printing even numbers using for and if
+
+Write a program that:
+
+- Asks the user to enter a **positive integer `n`**
+- Prints all even numbers from `1` to `n`, separated by spaces
+- At the end, prints the total number of even numbers printed
+
+#### Example:
+```python
+Enter a positive number: 10
+2 4 6 8 10
+Total even numbers: 5
+```
+---
