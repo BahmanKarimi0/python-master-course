@@ -33,3 +33,21 @@ Enter a number: 5
 Sum: 15
 ```
 ---
+### Exercise 05‑02 – countdown using a while loop
+
+Write a program that:
+
+- Prompts the user to enter a **positive integer `n`**
+- Uses a `while` loop to count down from `n` to `1`, printing each number
+- After the countdown, prints `"🚀 Liftoff!"`
+
+#### Example:
+```python
+Enter a positive number (e.g. 12): 5
+5
+4
+3
+2
+1
+🚀 Liftoff!
+```
