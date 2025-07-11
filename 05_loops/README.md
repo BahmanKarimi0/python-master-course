@@ -84,3 +84,18 @@ Write a program that:
 *****
 ```
 ---
+### Exercise 05‑05 – summing digits of a number using for-loop
+
+Write a program that:
+
+- Asks the user to enter a **positive integer**
+- Iterates through each digit of the number using a `for` loop
+- Sums the digits
+- Displays each digit with a `+` symbol and shows the total sum
+
+#### Example:
+```python
+Enter a number: 391
+3 + 9 + 1 = 13
+```
+---
