@@ -67,3 +67,20 @@ Enter a positive number: 10
 Total even numbers: 5
 ```
 ---
+### Exercise 05‑04 – triangle pattern using nested for-loop
+
+Write a program that:
+
+- Asks the user to enter a **positive integer `n`**
+- Prints a left-aligned triangle of stars, with `n` rows
+- Each row contains a number of stars equal to the row number
+
+#### Example:
+```python
+*
+**
+***
+****
+*****
+```
+---
