@@ -160,3 +160,25 @@ Indices of zeros: [1, 3, 5]
 Indices of non-zero digits: [0, 2, 4, 6]
 ```
 ---
+### ✅ Exercise 05-09 – Counting vowels and their indices
+
+**Description:**  
+Write a Python program that:
+1. Prompts the user to input a string.
+2. Counts the number of vowels (a, e, i, o, u – both uppercase and lowercase).
+3. Tracks the **indices** of vowels in the string.
+4. Calculates and displays the number of **non-vowel** characters.
+
+**Input Example:**
+```python
+Enter a string: OpenAI creates amazing tools
+```
+
+**Expected Output:**
+```python
+Vowel characters: ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+Vowel count: 12
+Indices of vowels: [0, 2, 4, 5, 9, 10, 12, 15, 17, 19, 24, 25]
+Non-vowel count: 16
+```
+---
