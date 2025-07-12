@@ -114,3 +114,24 @@ Enter a positive number (e.g. 234): 391
 Reversed: 193 (type: <class 'int'>)
 ```
 ---
+### Exercise 05‑07 – Checking if a Number is Prime Using a Loop
+
+Write a program that:
+
+- Prompts the user to enter a number greater than 1
+- Checks whether the number is **prime** using a loop
+- A number is prime if it is divisible only by 1 and itself
+- Uses `range()` with `step=2` for better performance (skipping even numbers)
+- Handles invalid inputs using exception handling
+
+#### Example:
+```python
+Enter a number: 23
+✅ 23 is a prime number.
+```
+- or
+```python
+Enter a number: 12
+❌ 12 is not a prime number.
+```
+----
