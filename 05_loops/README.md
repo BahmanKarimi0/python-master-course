@@ -135,3 +135,28 @@ Enter a number: 12
 ❌ 12 is not a prime number.
 ```
 ----
+### 🧮 Exercise 05‑08 – Finding indices of zero and non-zero digits using `enumerate()`
+
+#### 📌 Description
+Write a program that:
+- Asks the user to input a sequence of digits (e.g. `"1050401"`).
+- Iterates over the digits using the `enumerate()` function.
+- Separates the **indices of digits that are zero** and the **indices of digits that are non-zero** into two separate lists.
+- Prints both index lists.
+
+#### ✅ Requirements
+- Use `enumerate()` to get both index and digit.
+- Store the results in two lists: one for zeros and one for non-zero digits.
+- Input must be validated to contain only digits.
+
+#### 📥 Input Example:
+```python
+Enter a number (e.g. 1100023012): 1050401
+```
+
+#### 📤 Output Example:
+```python
+Indices of zeros: [1, 3, 5]
+Indices of non-zero digits: [0, 2, 4, 6]
+```
+---
