@@ -99,3 +99,18 @@ Enter a number: 391
 3 + 9 + 1 = 13
 ```
 ---
+### Exercise 05‑06 – reversing a number using for or while loop
+
+Write a program that:
+
+- Prompts the user to enter a **positive integer**
+- Reverses the digits using a loop (not slicing or built-in functions!)
+- Converts the result back to `int`
+- Displays the reversed number and its type
+
+#### Example:
+```python
+Enter a positive number (e.g. 234): 391
+Reversed: 193 (type: <class 'int'>)
+```
+---
