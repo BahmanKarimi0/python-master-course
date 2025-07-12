@@ -182,3 +182,22 @@ Indices of vowels: [0, 2, 4, 5, 9, 10, 12, 15, 17, 19, 24, 25]
 Non-vowel count: 16
 ```
 ---
+### Exercise 05‑10 – Split numbers into even and odd lists and calculate their sums
+
+**Description**:  
+This program asks the user to enter a positive integer `N`, then:
+
+- Iterates from 1 to N (inclusive)
+- Separates even and odd numbers into two different lists
+- Calculates and prints the sum of each group
+
+**Example:**
+```pyhton
+Enter a number: 7
+Even numbers: [2, 4, 6]
+Sum of evens: 12
+
+Odd numbers: [1, 3, 5, 7]
+Sum of odds: 16
+```
+---
