@@ -248,3 +248,27 @@ Input: 1234567890
 Output: No repeated digits found.
 ```
 ---
+## Exercise 05-14 – Most Frequent Digits and Their Indices
+
+**Description**
+Write a program that asks the user to enter a number (as a string).
+The program should count the frequency of each digit and store their indices (positions).
+Only digits that occur more than once should be displayed.
+The output should be sorted in descending order of frequency.
+
+**Requirements:**
+
+- Use a dictionary to store each digit as a key.
+- Each value should be a list containing the count and a list of indices.
+- Use enumerate() to track positions.
+- Sort the final output based on the number of occurrences (highest first).
+- Ignore digits that occur only once.
+- Validate the input to ensure it contains only digits.
+
+**Example:**
+```python
+Enter positive number (e.g. 123432):
+Digit: 2 – Count: 2 – Indices: [1, 5]
+Digit: 3 – Count: 2 – Indices: [2, 4]
+```
+---
