@@ -217,3 +217,18 @@ Digit '2' occurs again at positions: [6]
 Digit '3' occurs again at positions: [4]
 ```
 ---
+## Exercise 05-12 – Digits that occur only once and their indices
+
+**Description**:  
+This program prompts the user for a number (as a string of digits), then finds the digits that appear exactly once in the input.  
+It prints those digits along with the index where they appear.
+
+**Example**:
+```pyhton
+Enter a number (e.g. 123543421): 12234456
+🔍 Digits that appear only once:
+Digit '1' at index 0
+Digit '5' at index 6
+Digit '6' at index 7
+```
+---
