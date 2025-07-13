@@ -201,3 +201,19 @@ Odd numbers: [1, 3, 5, 7]
 Sum of odds: 16
 ```
 ---
+### Exercise 05-11 – Repeated Digits and Their Positions
+
+**Description**:  
+This program asks the user to enter a positive integer and checks for any repeated digits.  
+If a digit appears more than once, it shows the digit and the index positions (except the first one).  
+If no repetitions are found, it will indicate that all digits are unique.
+
+**Example**:
+```python
+Enter a number (e.g. 123543421): 123543421
+🔁 Repeated digits found:
+Digit '1' occurs again at positions: [8]
+Digit '2' occurs again at positions: [6]
+Digit '3' occurs again at positions: [4]
+```
+---
