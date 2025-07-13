@@ -272,3 +272,18 @@ Digit: 2 – Count: 2 – Indices: [1, 5]
 Digit: 3 – Count: 2 – Indices: [2, 4]
 ```
 ---
+## Exercise 05-15 – Finding repeated characters and their positions in a string
+
+**Description**  
+This program prompts the user to input a non-empty string.  
+It counts the occurrences of each character and records their indices.  
+Finally, it prints the characters that appear more than once along with their counts and positions.
+
+**Example:**  
+```python
+Enter a string (e.g. Python): programming
+Character 'r' occurs 2 times at positions: [2, 6]
+Character 'g' occurs 2 times at positions: [5, 9]
+Character 'm' occurs 2 times at positions: [3, 4]
+```
+---
