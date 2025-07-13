@@ -232,3 +232,19 @@ Digit '5' at index 6
 Digit '6' at index 7
 ```
 ---
+## Exercise 05-13 – Most Frequent Digit (with First Appearance Priority)
+
+**Description**  
+This program receives a number as a string input from the user.  
+It finds the most frequent digit that appears more than once.  
+If multiple digits have the same maximum frequency, the one that appears **first** in the string is selected.
+
+**Example:**
+```python
+Input: 99887712345
+Output: Most frequent digit: 9 (2 times)
+
+Input: 1234567890
+Output: No repeated digits found.
+```
+---
