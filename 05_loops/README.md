@@ -287,3 +287,15 @@ Character 'g' occurs 2 times at positions: [5, 9]
 Character 'm' occurs 2 times at positions: [3, 4]
 ```
 ---
+## Exercise 05-16 – List all prime numbers up to N
+
+**Description**  
+This program receives a number from the user and prints  
+all **prime numbers** less than or equal to the input.  
+It uses a basic algorithm to check for primality using trial division.
+
+**Example**
+```pyhton
+Enter a positive number: 17
+Prime numbers up to 17: 2, 3, 5, 7, 11, 13, 17
+```
