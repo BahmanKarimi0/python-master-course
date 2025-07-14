@@ -312,4 +312,17 @@ The result is a new string where each group of repeated digits is represented by
 Enter a number: 11223344445555
 Output: 2132234455
 ```
+
+Explanation:
+- Two '1's → `21`  
+- Two '2's → `22`  
+- Three '3's → `33`  
+- Four '4's → `44`  
+- Three '5's → `53`
+
+**Sample Input/Output:**
+```python
+Input: 11233355
+Output: 2133352
+```
 ---
