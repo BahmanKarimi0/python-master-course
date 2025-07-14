@@ -299,3 +299,17 @@ It uses a basic algorithm to check for primality using trial division.
 Enter a positive number: 17
 Prime numbers up to 17: 2, 3, 5, 7, 11, 13, 17
 ```
+---
+## Exercise 05-17 – Run-Length Encoding of Repeated Digits
+
+**Description**  
+This program receives a number from the user as a string.  
+It compresses the string using **run-length encoding**, which counts **consecutive repeated digits**.  
+The result is a new string where each group of repeated digits is represented by the digit followed by its count.
+
+**Example:**
+```python
+Enter a number: 11223344445555
+Output: 2132234455
+```
+---
