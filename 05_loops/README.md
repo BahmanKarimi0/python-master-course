@@ -326,3 +326,15 @@ Input: 11233355
 Output: 2133352
 ```
 ---
+## Exercise 05-18 – Most Consecutive Repeated Digit
+
+**Description**  
+This program prompts the user to enter a number as a string.  
+It finds the digit that appears **the most consecutively**, and displays both the digit and how many times it was repeated in sequence.
+
+**Example**  
+```python
+Enter a number: 1223334444555
+Digit '4' appears the most consecutively (4 times).
+```
+---
