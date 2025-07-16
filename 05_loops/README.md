@@ -358,3 +358,18 @@ Enter a number: 135264
 ❌ The digits are not in a consecutive order.
 ```
 ---
+## Exercise 05‑20 – Digit Factorial Match (Weird Number)
+
+**Description**  
+This program checks if a number is a "Weird Number" — meaning the sum of the factorials of its digits equals the number itself.  
+It demonstrates the use of `for` loops for digit iteration and factorial calculation.
+
+**Example:**
+```python
+Enter a number: 145
+✅ 145 is a Weird Number (1! + 4! + 5! = 145)
+
+Enter a number: 123
+❌ 123 is NOT a Weird Number (1! + 2! + 3! = 9)
+```
+---
