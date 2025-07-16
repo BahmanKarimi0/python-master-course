@@ -373,3 +373,24 @@ Enter a number: 123
 ❌ 123 is NOT a Weird Number (1! + 2! + 3! = 9)
 ```
 ---
+## Exercise 05-21 – Triple Repeat Finder (Loop & String Analysis)
+
+**Description**  
+This program receives a string from the user and checks if any character appears **exactly 3 times in a row**.  
+If so, it prints those characters and the index where the triple repetition starts.  
+If no such sequence exists, it informs the user accordingly.
+
+**Example 1:**
+```python
+Enter a string: aaabbcccddde
+✅ Found: character 'a' repeats 3 times starting at index 0
+✅ Found: character 'c' repeats 3 times starting at index 5
+✅ Found: character 'd' repeats 3 times starting at index 8
+```
+
+**Example 2:**
+```python
+Enter a string: abcdefgh
+❌ No character repeated exactly 3 times in a row.
+```
+---
