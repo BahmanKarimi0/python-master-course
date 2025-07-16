@@ -394,3 +394,20 @@ Enter a string: abcdefgh
 ❌ No character repeated exactly 3 times in a row.
 ```
 ---
+## Exercise 05‑22 – Shifted Characters Using Unicode
+
+**Description**  
+This program prompts the user to enter a string.  
+It then generates a new string where each character is shifted forward by one in the Unicode table.  
+For example, `'a'` becomes `'b'`, `'Z'` becomes `'['`, and `'9'` becomes `':'`.
+
+**Functions used:**
+- `ord(char)` – returns the Unicode code point of the character
+- `chr(code)` – returns the character represented by the Unicode code point
+
+**Example:**
+```python
+Enter a string: abZ9*
+Shifted string: bc[:+
+```
+---
