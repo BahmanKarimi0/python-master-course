@@ -338,3 +338,23 @@ Enter a number: 1223334444555
 Digit '4' appears the most consecutively (4 times).
 ```
 ---
+## Exercise 05-19 – Check if Digits Are in Ascending or Descending Order (with loops)
+
+**Description**  
+This program asks the user to enter a number (as a string).  
+Using a `for` loop, it checks whether the digits of the number are arranged in ascending, descending, or unordered sequence.
+
+It compares each digit with the next one and keeps track of whether the sequence is strictly increasing or decreasing.
+
+**Example**
+```python
+Enter a number: 123456
+✅ The digits are in ascending order.
+
+Enter a number: 987321
+✅ The digits are in descending order.
+
+Enter a number: 135264
+❌ The digits are not in a consecutive order.
+```
+---
