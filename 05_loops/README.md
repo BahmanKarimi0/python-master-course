@@ -411,3 +411,25 @@ Enter a string: abZ9*
 Shifted string: bc[:+
 ```
 ---
+## Exercise 05‑23 – Count Duplicate Letters (Case-Insensitive)
+
+**Description**  
+This program receives a string input from the user and finds all alphabetic characters (letters)  
+that appear more than once, regardless of case (A/a treated the same).  
+It prints how many times each repeated letter appears, along with the list of indices where they occur.
+
+**Key Concepts:**
+- `for` loop with `enumerate()`
+- `dict` for counting and storing indices
+- `str.casefold()` for case-insensitive comparison
+- `str.isalpha()` to filter only letters
+
+**Example:**
+```python
+Enter a string: ApPle is Amazing
+
+Found repeated letters:
+Letter 'a' appears 3 times at indices: [0, 10, 14]
+Letter 'i' appears 2 times at indices: [6, 12]
+```
+---
