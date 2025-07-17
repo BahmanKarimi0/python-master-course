@@ -450,3 +450,19 @@ Sum: 12 (2 + 3 + 7)
 Enter a number: 81
 Number must have at least 3 digits.
 ```
+## Exercise 05-25 – Detecting Consecutive Ascending Digits
+
+**Description**  
+This program prompts the user to enter a number (as a string).  
+It then searches for a **sequence of at least 3 digits** that are in strictly increasing consecutive order.  
+If such a sequence is found, it prints it. Otherwise, it informs the user that no such sequence exists.
+
+**Example:**
+```python
+Enter a number: 245678
+✅ Found ascending number: 456
+
+Enter a number: 987654
+❌ No ascending digits were found.
+```
+---
