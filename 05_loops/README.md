@@ -433,3 +433,20 @@ Letter 'a' appears 3 times at indices: [0, 10, 14]
 Letter 'i' appears 2 times at indices: [6, 12]
 ```
 ---
+## Exercise 05-24 – Sum of Inner Digits (Excluding First and Last)
+
+**Description**  
+This program receives a number as input and calculates the sum of the digits **excluding the first and last** digit.  
+If the number has fewer than 3 digits, it prints a warning.
+
+**Example 1:**
+```python
+Enter a number: 52367
+Sum: 12 (2 + 3 + 7)
+```
+
+**Example 2:**
+```python
+Enter a number: 81
+Number must have at least 3 digits.
+```
