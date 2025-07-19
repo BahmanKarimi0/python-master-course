@@ -538,3 +538,27 @@ Found repeated substrings:
 'bca' → 2 times
 ```
 ---
+## Exercise 05-30 – Finding the First Missing Digit (0–9)
+
+**Description**  
+This program prompts the user to enter a positive number.  
+It checks which digit (from 0 to 9) is **missing** from the number and prints the **first missing digit**.  
+If all digits are present, it prints a confirmation message.
+
+> The program only uses loops and conditional logic.  
+> Functions like `set()` or `"x in y"` are not used to encourage practicing loop-based logic.
+
+---
+
+**Example 1:**
+```python
+Input: 123456789
+Output: ❌ Missing digit: 0
+```
+
+**Example 2:**
+```python
+Input: 9876543210
+Output: ✅ All digits from 0 to 9 are present.
+```
+---
