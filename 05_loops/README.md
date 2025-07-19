@@ -466,3 +466,18 @@ Enter a number: 987654
 ❌ No ascending digits were found.
 ```
 ---
+## Exercise 05-26 – Alternating Odd and Even Digits
+
+**Description**  
+This program checks whether the digits of a given number alternate between odd and even values.  
+If any two consecutive digits are both odd or both even, the sequence is **not** considered alternating.
+
+**Example:**
+```python
+Enter a number: 281739
+✅ Digits alternate between odd and even.
+
+Enter a number: 1223
+❌ Digits do not alternate.
+```
+---
