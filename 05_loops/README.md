@@ -503,3 +503,15 @@ Input: aBCd → ❌ Not alternating
 - Input must contain only alphabetic characters (A-Z, a-z).
 - Case sensitivity is enforced (i.e., 'a' and 'A' are treated differently).
 ---
+## Exercise 05-28 – Longest Substring Without Repeating Characters
+
+**Description**  
+This program takes a string as input and finds the longest substring without repeating characters using a loop-based approach.  
+It uses a sliding window logic to check each possible segment and updates the longest substring accordingly.
+
+**Example:**
+```python
+Enter a string: abcadefgb
+✅ Longest substring without repeating characters: bcadefg (length: 7)
+```
+---
