@@ -481,3 +481,25 @@ Enter a number: 1223
 ❌ Digits do not alternate.
 ```
 ---
+## Exercise 05-27 – Alternating Case Sequence
+
+**Description**  
+This program takes a string input from the user and checks whether the letters alternate between uppercase and lowercase.  
+An alternating sequence is one where no two adjacent letters share the same case.
+
+**How it works:**
+- The user is prompted to enter a string (letters only, no spaces or numbers).
+- The program checks that each letter has a different case than the one before.
+- If all adjacent letters alternate in case, the input is considered valid.
+
+**Example:**
+```python
+Input: AbCdEfG → ✅ Alternating case
+Input: aBcDEfg → ❌ Not alternating
+Input: aBCd → ❌ Not alternating
+```
+
+**Constraints:**
+- Input must contain only alphabetic characters (A-Z, a-z).
+- Case sensitivity is enforced (i.e., 'a' and 'A' are treated differently).
+---
