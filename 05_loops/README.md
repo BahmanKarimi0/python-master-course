@@ -515,3 +515,26 @@ Enter a string: abcadefgb
 ✅ Longest substring without repeating characters: bcadefg (length: 7)
 ```
 ---
+## Exercise 05-29 – Repeated Substrings (Length ≥ 2)
+
+**Description**  
+This program takes a string input and identifies all substrings (length ≥ 2)  
+that occur more than once in the input string.  
+It then prints each repeated substring along with the number of times it appears.
+
+**How it works:**
+- It uses nested `while` loops to generate all possible substrings.
+- Only substrings of length 2 or more are tracked.
+- The program uses a dictionary to count how many times each substring appears.
+- Finally, it prints only those substrings that appear more than once.
+
+**Example:**
+```python
+Enter a string: ababcabc
+Found repeated substrings:
+'ab' → 3 times
+'ba' → 2 times
+'abc' → 2 times
+'bca' → 2 times
+```
+---
