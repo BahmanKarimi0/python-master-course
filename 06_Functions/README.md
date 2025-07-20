@@ -33,12 +33,12 @@ We will begin with simple function definitions and gradually move toward more ad
 This exercise introduces function basics.
 Define a simple function named basic_call() that, when called, prints a greeting message.
 
-** Requirements: **
+**Requirements:**
 - Define a function without parameters.
 - Inside the function, print: Hello from a function!
 - Call the function from the main program.
 
-** Example Output: **
+**Example Output:**
 ```python
 Hello from a function!
 ```
@@ -72,7 +72,6 @@ This exercise introduces the concept of returning values from a function instead
 The function `sum_upto(n)` takes a positive integer `n` and returns the sum of numbers from 1 to `n`.  
 The result is then printed outside the function.
 
----
 
 **Example:**
 ```python
@@ -82,18 +81,18 @@ Sum from 1 to 6 is 21
 ---
 ## Exercise 06-04 – Average of a Range
 
-** Description **
+**Description**
 This program defines a function average_range(start, end) that calculates the average of all integers between two given numbers (inclusive).
 It prompts the user to enter two valid positive integers such that start < end, and returns their average.
 
-** Functionality **
+**Functionality**
 
 - Input validation ensures both inputs are digits and start is less than end.
 - The function loops through numbers in the range [start, end].
 - It accumulates the sum and counts how many numbers are processed.
 - It calculates and returns the average.
 
-** Example: **
+**Example:**
 ```python
 Enter start: 3
 Enter end: 8
