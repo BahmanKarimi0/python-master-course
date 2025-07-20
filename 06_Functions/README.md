@@ -33,15 +33,34 @@ We will begin with simple function definitions and gradually move toward more ad
 This exercise introduces function basics.
 Define a simple function named basic_call() that, when called, prints a greeting message.
 
-Requirements:
-
-Define a function without parameters.
-
-Inside the function, print: Hello from a function!
-
-Call the function from the main program.
+** Requirements: **
+- Define a function without parameters.
+- Inside the function, print: Hello from a function!
+- Call the function from the main program.
 
 ** Example Output: **
 ```python
 Hello from a function!
+```
+---
+## Exercise 06-02 – Function with Parameters
+
+**Description**  
+This exercise introduces the concept of **function parameters** in Python.  
+The goal is to define a function that takes a user's name as an argument and prints a personalized greeting.
+
+**Objectives**  
+- Learn how to define functions with parameters.
+- Understand the separation of input logic from function logic.
+
+**Requirements**  
+- Define a function named `greet_user(name)`.
+- The function should print a message like:  
+  `Hello, Alice! Welcome aboard. 👋`
+- Get the user’s name from input **outside the function**, and validate that it’s not empty.
+
+**Example**
+```python
+Enter your name: Alice
+Hello, Alice! Welcome aboard. 👋
 ```
