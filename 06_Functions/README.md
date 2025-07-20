@@ -28,3 +28,20 @@ We will begin with simple function definitions and gradually move toward more ad
 > 💡 **Note**: While the plan is to include 30 exercises, we may exceed this number to ensure full mastery of advanced topics like **decorators**, **generators**, and **coroutines** — all of which are essential for intermediate to advanced Python development.
 
 ---
+## ✅ Exercise 06‑01 – Basic Function Call
+### Description
+This exercise introduces function basics.
+Define a simple function named basic_call() that, when called, prints a greeting message.
+
+Requirements:
+
+Define a function without parameters.
+
+Inside the function, print: Hello from a function!
+
+Call the function from the main program.
+
+** Example Output: **
+```python
+Hello from a function!
+```
