@@ -64,3 +64,19 @@ The goal is to define a function that takes a user's name as an argument and pri
 Enter your name: Alice
 Hello, Alice! Welcome aboard. 👋
 ```
+---
+## Exercise 06-03 – Function that returns a value
+
+**Description**  
+This exercise introduces the concept of returning values from a function instead of just printing them.  
+The function `sum_upto(n)` takes a positive integer `n` and returns the sum of numbers from 1 to `n`.  
+The result is then printed outside the function.
+
+---
+
+**Example:**
+```python
+Enter a positive integer: 6
+Sum from 1 to 6 is 21
+```
+---
