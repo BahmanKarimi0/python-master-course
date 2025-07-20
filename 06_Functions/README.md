@@ -80,3 +80,23 @@ Enter a positive integer: 6
 Sum from 1 to 6 is 21
 ```
 ---
+## Exercise 06-04 – Average of a Range
+
+** Description **
+This program defines a function average_range(start, end) that calculates the average of all integers between two given numbers (inclusive).
+It prompts the user to enter two valid positive integers such that start < end, and returns their average.
+
+** Functionality **
+
+- Input validation ensures both inputs are digits and start is less than end.
+- The function loops through numbers in the range [start, end].
+- It accumulates the sum and counts how many numbers are processed.
+- It calculates and returns the average.
+
+** Example: **
+```python
+Enter start: 3
+Enter end: 8
+Average of numbers from 3 to 8 is 5.5
+```
+---
