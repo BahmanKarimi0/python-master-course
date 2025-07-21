@@ -132,3 +132,16 @@ Enter a number: 5379
 Sum of digits: 24
 ```
 ---
+## Exercise 06-07 – Sum of Even Numbers Using Function
+
+**Description**  
+This exercise defines a function `sum_of_evens(number)` that calculates the sum of all even numbers from 1 up to the given input (inclusive).  
+It uses a `for` loop inside the function and simple conditional logic.
+
+
+**Functionality Example**
+```python
+Enter a number: 10
+Sum of even numbers from 1 to 10 is 30
+```
+---
