@@ -99,3 +99,20 @@ Enter end: 8
 Average of numbers from 3 to 8 is 5.5
 ```
 ---
+## Exercise 06-05 – Calculating Factorial Using a Function
+
+### Description  
+This program defines a function `factorial(n)` that calculates the factorial of a given number using a `for` loop.  
+It prompts the user to enter a positive integer, computes its factorial, and prints the result.
+
+### Features
+- Input validation to ensure a positive integer.
+- Uses a `for` loop to compute the factorial.
+- Returns and displays the result.
+
+### Example
+```pyhon
+Enter a number: 5
+Factorial of 5 is 120
+```
+---
