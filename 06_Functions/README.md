@@ -145,3 +145,15 @@ Enter a number: 10
 Sum of even numbers from 1 to 10 is 30
 ```
 ---
+## Exercise 06-08 – Sum of Digits Using Recursion
+
+### 📝 Description
+This exercise defines a function `sum_digits_recursion()` that takes a number in string form and recursively calculates the sum of its digits without using any loops.
+
+The function uses the base case of an empty string to stop the recursion and builds the total sum by converting and adding the first digit to the result of the recursive call on the rest of the string.
+
+### 📌 Example
+```python
+Enter a number: 573
+Sum of digits: 15
+```
