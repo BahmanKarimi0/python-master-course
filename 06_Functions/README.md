@@ -116,3 +116,19 @@ Enter a number: 5
 Factorial of 5 is 120
 ```
 ---
+## Exercise 06-06 – Sum of Digits Using a Function
+
+**Description**  
+This program prompts the user to enter a positive integer.  
+It defines a function `sum_of_digits(number)` that calculates the sum of the digits of the number using a `for` loop.
+
+**Functionality**
+- Input validation ensures the user enters only digits.
+- The function adds each digit (after converting to `int`) and returns the total.
+
+**Example**
+```python
+Enter a number: 5379
+Sum of digits: 24
+```
+---
