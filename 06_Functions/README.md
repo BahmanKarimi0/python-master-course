@@ -204,3 +204,15 @@ Enter a number: 17
 ✅ Is prime? True
 ```
 ---
+### Exercise 06-13 – Check for Perfect Number
+
+**Description**
+- This program defines a function is_perfect(n) that checks whether a given number is a perfect number.
+- A perfect number is an integer that is equal to the sum of its proper positive divisors (excluding itself).
+
+**Example:**
+```python
+Enter a number: 28  
+✅ Is perfect? True
+```
+---
