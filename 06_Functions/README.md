@@ -189,3 +189,18 @@ Enter list of number separate with space (e.g. 1 2 3): 4 5 6
 Sum of digits: 15
 ```
 ---
+### ✅ Exercise 06-12 – Check for Prime Number
+**Description**
+- This program defines a function is_prime(n) that checks whether a number is prime or not.
+- It takes a positive integer as input from the user, and then returns True if the number is prime, otherwise False.
+
+**Function Logic**
+- A number is prime if it is greater than 1 and divisible only by 1 and itself.
+- To optimize performance, we only check divisibility up to the square root of the number.
+
+**Example:**
+```python
+Enter a number: 17
+✅ Is prime? True
+```
+---
