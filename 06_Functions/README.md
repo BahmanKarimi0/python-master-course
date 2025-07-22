@@ -177,3 +177,15 @@ Enter list of number separate with space (e.g. 1 2 3): 5 8 3 10
 Average = 6.5
 ```
 ---
+## Exercise 06-11 – Recursive Sum of a List
+
+**Description**  
+This program takes a list of space-separated integers as input from the user.  
+It then calculates the sum of those numbers using a **recursive function**, without using loops.
+
+**Example:**
+```python
+Enter list of number separate with space (e.g. 1 2 3): 4 5 6
+Sum of digits: 15
+```
+---
