@@ -157,3 +157,23 @@ The function uses the base case of an empty string to stop the recursion and bui
 Enter a number: 573
 Sum of digits: 15
 ```
+## Exercise 06-10 – Average of Numbers in a List (Using a Function)
+
+### Description
+This program asks the user to enter a list of **positive integers** separated by space.  
+It defines a function named `calculate_average(numbers)` that:
+
+- Iterates through the list using a loop
+- Calculates the sum of all elements manually
+- Counts the number of elements
+- Returns the **average**
+
+> ✅ The goal is to reinforce function usage and avoid using built-in functions like `sum()` or `statistics.mean()`.
+
+
+### Example
+```python
+Enter list of number separate with space (e.g. 1 2 3): 5 8 3 10
+Average = 6.5
+```
+---
