@@ -157,6 +157,19 @@ The function uses the base case of an empty string to stop the recursion and bui
 Enter a number: 573
 Sum of digits: 15
 ```
+---
+## Exercise 06-09 – Find the Maximum Value in a List (Without `max()`)
+
+**Description**  
+This program asks the user to input a list of space-separated numbers.  
+It then defines a function `find_max(lst)` that manually iterates through the list to find and return the maximum value, without using Python’s built-in `max()` function.
+
+**Example**
+```python
+Enter list of number separate with space (e.g. 1 2 3): 6 2 8 1 9
+Max number is 9
+```
+---
 ## Exercise 06-10 – Average of Numbers in a List (Using a Function)
 
 ### Description
