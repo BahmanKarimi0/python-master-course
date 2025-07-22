@@ -216,3 +216,23 @@ Enter a number: 28
 ✅ Is perfect? True
 ```
 ---
+## Exercise 06-14 – Is Palindrome Number?
+
+**Description**  
+This program defines a function `is_palindrome()` that checks whether a given number (as a string) is a palindrome.  
+A number is considered a palindrome if it reads the same forwards and backwards.
+
+**Functionality**  
+- Prompts the user to enter a positive integer.
+- Calls the function `is_palindrome()` to check the condition.
+- Prints the result accordingly.
+
+**Example:**
+```python
+Enter a number: 1221
+✅ Is palindrome: True
+
+Enter a number: 1234
+✅ Is palindrome: False
+```
+---
