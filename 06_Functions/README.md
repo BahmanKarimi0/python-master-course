@@ -279,3 +279,15 @@ Enter a number: 4813
 → Sum of digits: 16
 ```
 ----
+### Exercise 06-17 – Filter Prime Numbers from a List
+
+**Description**
+- This program defines a function is_prime() that determines if a given number is prime.
+- It receives a list of positive integers from the user and filters out only the prime numbers using the built-in filter() function.
+
+**Example:**
+```python
+Input:  12 7 9 2 5 10  
+Output: [7, 2, 5]
+```
+---
