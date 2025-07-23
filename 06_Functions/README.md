@@ -260,3 +260,22 @@ Enter a number: 12345
 Reversed number: 54321
 ```
 ---
+## Exercise 06-16 – Digit Count and Sum
+
+**Description**  
+This program defines a function `digit_info(number)` that receives a number as a string input.  
+It calculates the total number of digits and their sum. The function returns a tuple containing both values.
+
+**Functionality:**  
+- Input: A positive integer as a string  
+- Output:  
+  - The number of digits  
+  - The sum of all digits
+
+**Example:**
+```python
+Enter a number: 4813
+→ Digit count: 4
+→ Sum of digits: 16
+```
+----
