@@ -249,3 +249,14 @@ Enter a number: 1234
 ✅ Is palindrome: False
 ```
 ---
+### Exercise 06‑15 – Reverse Digits of a Number
+**Description**
+- This program defines a function reverse_digit(number) that takes a number as a string and returns its reverse.
+- The user is prompted to enter a positive integer, and the reversed number is displayed.
+
+**Example:**
+```python
+Enter a number: 12345  
+Reversed number: 54321
+```
+---
