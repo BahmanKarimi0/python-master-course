@@ -305,3 +305,23 @@ Enter list of numbers that separate with space: 3 9 12 4 7
 Max value: 12
 ```
 ---
+## Exercise 06-19 – Unique Characters Check
+
+**Description**  
+Write a function that checks if all characters in a given string are unique.  
+Do **not** use Python sets or `len(set(...))`.  
+Use **loops only** to check for character repetition.
+
+**Requirements**  
+- The input should be a non-empty string.
+- The function should return `True` if all characters are unique, otherwise `False`.
+
+**Example**  
+```python
+Input: "Python"
+Output: True
+
+Input: "letter"
+Output: False
+```
+---
