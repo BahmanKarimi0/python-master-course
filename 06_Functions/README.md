@@ -325,3 +325,16 @@ Input: "letter"
 Output: False
 ```
 ---
+### Exercise 06-20 – Palindrome Anagram Checker
+
+**Description**
+- This program checks whether the characters of a given string can be rearranged to form a palindrome.
+- A string is a palindrome anagram if at most one character appears an odd number of times.
+
+**Example:**
+```python
+Input: civic     → ✅ Can form a palindrome
+Input: racecar   → ✅ Can form a palindrome
+Input: hello     → ❌ Cannot form a palindrome
+```
+---
