@@ -291,3 +291,17 @@ Input:  12 7 9 2 5 10
 Output: [7, 2, 5]
 ```
 ---
+### 📘 Exercise 06-18 – Recursive Maximum Finder
+
+**Description**
+- This program receives a list of positive integers from the user, separated by spaces.
+- It uses a recursive function to determine and return the maximum value in the list.
+- Input is validated to ensure all values are digits.
+- The function avoids using built-in tools like max() or loops, and instead uses recursion.
+
+**Example:**
+```python
+Enter list of numbers that separate with space: 3 9 12 4 7
+Max value: 12
+```
+---
