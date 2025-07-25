@@ -364,3 +364,20 @@ Output: hELLO wORLD!
 "mnopq" → ✅ Valid
 ```
 ---
+### Exercise 06-23 — Check for Perfect Number Using Nested Functions
+
+**Topic:** Nested Functions
+
+**Description:**  
+Write a program that checks whether a given number is a **perfect number** or not.  
+A perfect number is a number that is equal to the sum of its **proper divisors** (excluding itself).  
+Use **nested functions** to structure your code.
+
+---
+
+**Example:**
+```python
+Enter a number: 28
+'28' is a perfect number? True
+```
+---
