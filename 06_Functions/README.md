@@ -381,3 +381,25 @@ Enter a number: 28
 '28' is a perfect number? True
 ```
 ---
+## Exercise 06-24: Happy Number Checker
+
+
+### 🧠 Description
+
+Write a Python function named `is_happy_number(n)` that checks whether a given number is a **happy number**.
+
+A **happy number** is defined by the following process:
+- Starting with any positive integer, replace the number with the **sum of the squares of its digits**.
+- Repeat the process until the number becomes `1`, or it loops endlessly in a cycle that does **not** include `1`.
+
+If the process ends in `1`, the number is considered **happy**.
+
+### 🔢 Example
+```python
+Enter a number: 19
+'19' is happy number? True
+
+Enter a number: 4
+'4' is happy number? False
+```
+---
