@@ -338,3 +338,16 @@ Input: racecar   → ✅ Can form a palindrome
 Input: hello     → ❌ Cannot form a palindrome
 ```
 ---
+### Exercise 06-21 – Toggle Case Function
+
+**Description**
+- Write a function that receives a string and returns a new string with uppercase letters converted to lowercase, and lowercase letters converted to uppercase.
+- You must use loops and conditional statements — built-in methods like swapcase() are not allowed.
+- Non-alphabetic characters (like spaces and punctuation) must remain unchanged.
+
+**Example**
+```python
+Input:  Hello World!
+Output: hELLO wORLD!
+```
+---
