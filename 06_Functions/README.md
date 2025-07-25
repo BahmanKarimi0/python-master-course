@@ -351,3 +351,16 @@ Input:  Hello World!
 Output: hELLO wORLD!
 ```
 ---
+### ✅ Exercise 06-22 – Consecutive Unicode Characters
+
+**Description**
+- Write a function that checks if the characters in a string appear consecutively in Unicode order.
+- Each character must be exactly one code point after the previous one.
+
+**Example:**
+```python
+"abcd" → ✅ Valid
+"ace" → ❌ Invalid
+"mnopq" → ✅ Valid
+```
+---
