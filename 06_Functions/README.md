@@ -403,3 +403,15 @@ Enter a number: 4
 '4' is happy number? False
 ```
 ---
+### ✅ Exercise 06-25: Calculate Average of Positive Numbers Using a Function
+
+**Description**
+- Write a function that takes a list of integers and returns the average of only the positive numbers. The program should take input from the user as space-separated values, convert them to integers, and print the average of the positive numbers. If no positive numbers are present, return None.
+
+**Example:**
+```python
+Enter list of number that separate with space: -5 3 6 -2 1
+
+Sum of average numbers: 3.3333333333333335
+```
+---
