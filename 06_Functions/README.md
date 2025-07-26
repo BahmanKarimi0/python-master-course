@@ -415,3 +415,19 @@ Enter list of number that separate with space: -5 3 6 -2 1
 Sum of average numbers: 3.3333333333333335
 ```
 ---
+### 🧮 Exercise 06-26: Find Prime Numbers in a List
+
+**📋 Task**
+
+- Write a program that:
+- Takes a list of integers as input (space-separated).
+- Validates that all inputs are valid integers.
+- Defines a function is_prime(n) that checks whether a number is prime.
+- Filters and prints only the prime numbers from the list.
+
+**✅ Example:**
+```python
+Input:  3 5 8 10 11 17 20  
+Output: Prime numbers: [3, 5, 11, 17]
+```
+---
