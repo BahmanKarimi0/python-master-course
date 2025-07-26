@@ -431,3 +431,23 @@ Input:  3 5 8 10 11 17 20
 Output: Prime numbers: [3, 5, 11, 17]
 ```
 ---
+### ✅ Exercise 06-27: Frequency Count in a List
+
+
+#### 📌 Question:
+
+Write a Python program that:
+
+1. Asks the user to input a list of positive integers separated by spaces.
+2. Defines a function `frequency_count(lst)` that calculates how many times each number appears in the list.
+3. Prints the frequency of each number as a dictionary: `{number: frequency}`.
+
+> ✅ This exercise helps you practice working with functions, loops, dictionaries, and input validation.
+
+#### 🧪 Example:
+```python
+Enter list of numbers that separate with space: 4 1 2 4 2 4 1
+{4: 3, 1: 2, 2: 2}
+```
+---
+
