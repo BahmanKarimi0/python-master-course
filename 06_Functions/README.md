@@ -450,4 +450,20 @@ Enter list of numbers that separate with space: 4 1 2 4 2 4 1
 {4: 3, 1: 2, 2: 2}
 ```
 ---
+### ✅ Exercise 06-28: Most Frequent Number
 
+**Topic: Functions – Counting frequency of elements in a list**
+
+**📘 Description:**
+
+- Write a Python program that:
+- Asks the user to enter a list of positive integers separated by spaces.
+- Then, defines a function called most_frequent() that takes a list as input and returns the number that appears most frequently in the list along with its count.
+- Finally, print the number and how many times it appeared.
+
+**🧪 Example:**
+```python
+Input: 5 3 5 2 9 5 3 2  
+Output: Number: 5, Count: 3
+```
+---
