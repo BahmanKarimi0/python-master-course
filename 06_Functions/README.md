@@ -467,3 +467,19 @@ Input: 5 3 5 2 9 5 3 2
 Output: Number: 5, Count: 3
 ```
 ---
+## Exercise 06-29: Find Duplicate Numbers in a List
+
+**Description**  
+Write a Python program that:
+1. Prompts the user to enter a list of positive integers separated by space.
+2. Defines a function `find_duplicates(lst)` that returns a dictionary of numbers that appear more than once.
+3. Prints the repeated numbers and their counts.
+4. If the list contains only unique numbers, print a message indicating that.
+
+**Example Input:**
+```python
+Enter list of numbers that separated by a space: 1 2 3 2 4 3 5 6
+2: 2
+3: 2
+```
+---
