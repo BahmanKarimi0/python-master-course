@@ -483,3 +483,46 @@ Enter list of numbers that separated by a space: 1 2 3 2 4 3 5 6
 3: 2
 ```
 ---
+### 📄 Exercise 06-30: Find Perfect Numbers in a Given Range
+
+**🧠 Problem**
+- Write a Python program that asks the user to enter two positive integers: start and end.
+- Define a function that returns a list of all perfect numbers in the range [start, end].
+- A perfect number is a positive integer that is equal to the sum of its proper divisors (excluding itself).
+
+**For example:**
+```text
+6 → 1 + 2 + 3 = 6
+28 → 1 + 2 + 4 + 7 + 14 = 28
+```
+
+**✅ Example:**
+
+Input:
+```text
+    start = 1
+    end = 30
+```
+**Output:**
+```text
+    In range 1 to 30, perfect number was found: [6, 28]
+```
+
+**🚦Requirements**
+- Prompt the user for two positive integers.
+- Use a user-defined function to find all perfect numbers in the range.
+- Display a clear message if no perfect numbers are found.
+- Validate user inputs (must be positive integers).
+
+**💡 Hint**
+- Use a nested loop:
+- Outer loop: from start to end
+- Inner loop: sum of proper divisors of each number
+
+**🧪 Sample Run**
+```python
+Enter a positive number: 1
+Enter a positive number: 1000
+In range 1 to 1000, perfect number was found: [6, 28, 496]
+```
+---
