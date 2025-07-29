@@ -752,3 +752,28 @@ Hello Alice
 Hello Alice
 ```
 ---
+### 🧠 Exercise 06-38 — Using Multiple Decorators on a Single Function
+
+**File Name:** `exercise_06_38_multiple_decorators.py`
+
+---
+
+#### 📋 Task:
+1. Write two decorators:
+   - `uppercase`: Converts the function’s return string to uppercase.
+   - `add_exclamation`: Adds an exclamation mark `!` to the end of the returned string.
+
+2. Apply both decorators to a function `say_hello(name)` which returns `"Hello {name}"`.
+
+3. Print the result of calling `say_hello("Alice")`.
+
+
+#### ✅ Expected Output:
+```python
+HELLO ALICE!
+```
+
+#### 💡 Hint:
+- Decorators are applied **bottom-up**, but executed **top-down**.
+- Use `functools.wraps` to preserve the identity of the original function.
+---
