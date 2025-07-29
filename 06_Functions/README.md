@@ -558,3 +558,35 @@ Variables defined inside a function are **local to that function** and do not af
 
 ---
 
+### 🧠 Exercise 06-32 — Using `global` to Modify a Global Variable
+
+**File Name:** `exercise_06_32_global_keyword_intro.py`
+
+---
+
+#### 📋 Task:
+Define a global variable named `counter` and set it to `0`.
+
+Write a function named `increase()` that:
+
+- Uses the `global` keyword to access and modify the global variable `counter`.
+- Increments `counter` by 1.
+- Prints the current value of `counter`.
+
+Then, call the function three times.  
+The output should be:
+```python
+1
+2
+3
+```
+
+
+#### 🎯 Goal:
+Learn how the `global` keyword allows functions to modify global variables directly.
+
+
+#### 💡 Hint:
+Without using `global`, any assignment inside the function would create a new **local** variable named `counter`, shadowing the global one.
+
+---
