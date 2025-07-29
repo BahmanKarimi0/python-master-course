@@ -618,3 +618,36 @@ Without using `global`, any assignment inside the function would create a new **
 Use `nonlocal` when you want a nested function to modify a variable defined in its enclosing function scope — not global, not local, but *nonlocal*.
 
 ---
+### 🧠 Exercise 06-34 — Combining `global` and `nonlocal` in Nested Scopes
+
+**File Name:** `exercise_06_34_global_nonlocal_combo.py`
+
+---
+
+#### 📋 Task:
+1. Define a **global** variable `total = 100`.
+2. Create a function `outer()` with a local variable `count = 0`.
+3. Inside `outer()`, define a nested function `inner()` that:
+   - Uses `nonlocal` to access and increment `count` by 1.
+   - Uses `global` to access and decrement `total` by 2.
+   - Prints the current values of `count` and `total` in this format:
+     ```
+     Inner Call X: count = Y, total = Z
+     ```
+4. Call `inner()` three times inside `outer()`.
+5. After calling `outer()`, print the final value of `total`.
+
+---
+
+#### ✅ Expected Output:
+```python
+Inner Call 1: count = 1, total = 98
+Inner Call 2: count = 2, total = 96
+Inner Call 3: count = 3, total = 94
+Final total = 94
+```
+
+#### 💡 Hint:
+- Use `global` to modify variables defined outside all functions.
+- Use `nonlocal` to modify variables defined in enclosing (but not global) scopes.
+---
