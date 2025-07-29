@@ -723,4 +723,32 @@ Calling greet with args: ('Bob',), kwargs: {'age': 30}
 Hello Bob, age 30
 ```
 ---
+### 🧠 Exercise 06-37 — Decorator with Arguments (Repeat Decorator)
 
+**File Name:** `exercise_06_37_repeat_decorator_factory.py`
+
+---
+
+#### 📋 Task:
+Create a decorator factory `repeat(num_times)` that returns a decorator.  
+This decorator, when applied to a function, causes it to run `num_times` times each time it's called.  
+Only the result of the **last** call should be returned (if any).
+
+---
+
+#### ✅ Example:
+```python
+@repeat(num_times=3)
+def greet(name):
+    print(f"Hello {name}")
+
+greet("Alice")
+```
+
+### Output:
+```python
+Hello Alice
+Hello Alice
+Hello Alice
+```
+---
