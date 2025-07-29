@@ -651,3 +651,35 @@ Final total = 94
 - Use `global` to modify variables defined outside all functions.
 - Use `nonlocal` to modify variables defined in enclosing (but not global) scopes.
 ---
+### 🧠 Exercise 06-35 — Implementing a Simple Timer Decorator
+
+**File Name:** `exercise_06_35_simple_timer_decorator.py`
+
+---
+
+#### 📋 Task:
+1. Create a decorator `timer` that:
+   - Measures the execution time of the decorated function using `perf_counter`.
+   - Prints the elapsed time with the function name.
+   - Returns the original function’s return value.
+
+2. Define a function `countdown(n)` that:
+   - Counts down from `n` to `1`, printing each number.
+   - Uses `sleep(1)` to pause for 1 second between prints.
+
+3. Apply the `timer` decorator to `countdown`.
+
+#### 🎯 Goal:
+Understand how decorators work and how to use them for timing function execution.
+
+#### 💡 Hint:
+Use `functools.wraps` to preserve metadata of the original function.
+
+### Output example:
+```python
+3
+2
+1
+Time taken for 'countdown' is 3.00xx seconds
+```
+---
