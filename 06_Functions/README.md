@@ -683,3 +683,44 @@ Use `functools.wraps` to preserve metadata of the original function.
 Time taken for 'countdown' is 3.00xx seconds
 ```
 ---
+### 🧠 Exercise 06-36 — Decorator Handling Arbitrary Arguments (*args, **kwargs)
+
+**File Name:** `exercise_06_36_debug_args_decorator.py`
+
+---
+
+#### 📋 Task:
+Create a decorator `debug_args` that:
+- Prints the function name along with all positional (`*args`) and keyword (`**kwargs`) arguments whenever the decorated function is called.
+- Calls the original function with the same arguments.
+- Returns the original function's return value.
+
+---
+
+#### 🎯 Goal:
+Learn how to write decorators that support any number and type of function arguments.
+
+---
+
+#### 💡 Hint:
+Use `*args` and `**kwargs` in the wrapper function to capture all arguments.
+Use `functools.wraps` to preserve the decorated function’s metadata.
+
+### Example input:
+```python
+@debug_args
+def greet(name, age=None):
+    print(f"Hello {name}, age {age}")
+
+greet("Alice")
+greet("Bob", age=30)
+```
+### Example output:
+```python
+Calling greet with args: ('Alice',), kwargs: {}
+Hello Alice, age None
+Calling greet with args: ('Bob',), kwargs: {'age': 30}
+Hello Bob, age 30
+```
+---
+
