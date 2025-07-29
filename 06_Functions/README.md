@@ -590,3 +590,31 @@ Learn how the `global` keyword allows functions to modify global variables direc
 Without using `global`, any assignment inside the function would create a new **local** variable named `counter`, shadowing the global one.
 
 ---
+### 🧠 Exercise 06-33 — Using `nonlocal` in Nested Functions
+
+**File Name:** `exercise_06_33_nonlocal_scope_nested.py`
+
+---
+
+#### 📋 Task:
+1. Define a function called `outer()` with a local variable `count = 0`.
+2. Inside `outer()`, define a nested function `inner()` that:
+   - Uses the `nonlocal` keyword to access `count`.
+   - Increments `count` by 1.
+   - Prints the current value of `count`.
+3. Call `inner()` three times inside `outer()`.
+4. Finally, call `outer()`.
+
+---
+
+#### 🎯 Expected Output:
+```python
+1
+2
+3
+```
+
+#### 💡 Hint:
+Use `nonlocal` when you want a nested function to modify a variable defined in its enclosing function scope — not global, not local, but *nonlocal*.
+
+---
