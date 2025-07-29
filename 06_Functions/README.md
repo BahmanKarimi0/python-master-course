@@ -526,3 +526,35 @@ Enter a positive number: 1000
 In range 1 to 1000, perfect number was found: [6, 28, 496]
 ```
 ---
+### 🧠 Exercise 06-31 — Variable Scope: Local vs. Global
+
+**File Name:** `exercise_06_31_variable_scope_basic.py`
+
+---
+
+#### 📋 Task:
+Define a function named `greet()` that contains a local variable `name` with the value `"Alice"`.  
+Outside the function, also define a global variable `name` with the value `"Bob"`.
+
+Then:
+
+1. Call the `greet()` function.
+2. After calling the function, print the value of the global variable `name`.
+
+---
+
+#### 🎯 Goal:
+Understand how Python distinguishes between **local** and **global** variable scope inside and outside functions.
+
+---
+
+#### ✅ Example Output:
+```python
+Hello, Alice
+Hi, Bob
+```
+#### 💡 Hint:
+Variables defined inside a function are **local to that function** and do not affect variables in the global scope — even if they have the same name.
+
+---
+
