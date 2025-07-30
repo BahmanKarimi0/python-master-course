@@ -800,3 +800,36 @@ Processing data...
 Use `@wraps(func)` to preserve the original function’s identity.
 
 ---
+### 🧠 Exercise 06-40 — Authorization Decorator
+
+**File Name:** `exercise_06_40_authorization_decorator.py`
+
+---
+
+#### 📋 Task:
+Create a decorator factory `authorize(allowed_users)` that returns a decorator.  
+This decorator should allow only the users listed in `allowed_users` to execute the decorated function.
+
+- The first parameter of the function must be `user`.
+- If the user is allowed, the function runs.
+- If not, print: ❌ Access denied for user 'username'
+
+---
+
+#### 🧪 Example:
+
+```python
+@authorize(allowed_users=["admin", "root"])
+def delete_all_data(user):
+    print("🚨 All data deleted!")
+
+delete_all_data("admin")  # ✅ Allowed
+delete_all_data("guest")  # ❌ Denied
+```
+
+#### ✅ Expected Output:
+```python
+🚨 All data deleted!
+❌ Access denied for user 'guest'
+```
+---
