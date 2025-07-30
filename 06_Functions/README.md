@@ -777,3 +777,26 @@ HELLO ALICE!
 - Decorators are applied **bottom-up**, but executed **top-down**.
 - Use `functools.wraps` to preserve the identity of the original function.
 ---
+### 🧠 Exercise 06-39 — Logging Decorator
+
+**File Name:** `exercise_06_39_logging_decorator.py`
+
+
+#### 📋 Task:
+Write a decorator `log_status` that:
+- Before the function runs, prints: `--> Starting function 'func_name'`
+- After the function runs, prints: `<-- Finished function 'func_name'`
+
+Apply it to a function `process_data()` that prints `"Processing data..."`.
+
+#### ✅ Expected Output:
+```python
+--> Starting function process_data
+Processing data...
+<-- Finished function process_data
+```
+
+#### 💡 Hint:
+Use `@wraps(func)` to preserve the original function’s identity.
+
+---
