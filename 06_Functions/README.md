@@ -833,3 +833,37 @@ delete_all_data("guest")  # ❌ Denied
 ❌ Access denied for user 'guest'
 ```
 ---
+### 🧠 Exercise 06-41 — Memoization Decorator
+
+**File Name:** `exercise_06_41_memoize_decorator.py`
+
+
+#### 📋 Task:
+Write a decorator `memoize` that caches the result of a function for repeated arguments.  
+If the same arguments are passed again, return the cached result instead of re-running the function.
+
+Additionally, print:
+```python
+✅ Returned cached result for args: (a, b)
+```
+
+
+#### 🧪 Example:
+
+```python
+@memoize
+def show_add(a, b):
+    print(f"Calculating {a} + {b}...")
+    return a + b
+
+print(show_add(1, 2))
+print(show_add(2, 1))
+```
+#### ✅ Expected Output:
+```python
+Calculating 1 + 2...
+3
+✅ Returned cached result for args: (1, 2)
+3
+```
+---
