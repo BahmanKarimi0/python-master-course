@@ -908,3 +908,37 @@ Hello Bob
 🧮 Called greet 1 times
 ```
 ---
+### 🧠 Exercise 06-43 — Time-Restricted Function Decorator
+
+**File Name:** `exercise_06_43_time_restricted_decorator.py`
+
+---
+
+#### 📋 Task:
+Write a decorator factory `only_during(start_time, end_time)` that:
+- Allows the decorated function to run only between the given hours.
+- If the current hour is outside the allowed range, print:
+  ❌ Access denied: only available from {start_time} to {end_time}
+
+---
+
+#### 🧪 Example:
+
+```python
+@only_during(start_time=8, end_time=18)
+def access_data():
+    print("🔓 Access granted!")
+
+access_data()
+```
+#### ✅ Expected Output:
+If current hour is 10:
+```python
+🔓 Access granted!
+```
+
+If current hour is 22:
+```python
+❌ Access denied: only available from 8 to 18
+```
+---
