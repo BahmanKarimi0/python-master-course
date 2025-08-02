@@ -942,3 +942,37 @@ If current hour is 22:
 ❌ Access denied: only available from 8 to 18
 ```
 ---
+### 🧠 Exercise 06-44 — Multi-Condition Access Control Decorator
+
+**File Name:** `exercise_06_44_multi_condition_decorator.py`
+
+---
+
+#### 📋 Task:
+Build a decorator `access_controlled()` that enforces 3 conditions before allowing access to a function:
+
+1. ✅ Only allowed users can access the function.
+2. 🕒 Function can only be accessed during a specific time window (e.g. 9–17).
+3. 🔁 Each user can only call the function a limited number of times.
+
+---
+
+#### 🧪 Example:
+
+```python
+@access_controlled(allowed_users=["admin", "root"], start_hour=9, end_hour=17, max_calls=2)
+def access_dashboard(user):
+    print(f"✅ Welcome {user}, here is your dashboard")
+
+access_dashboard("admin")  # ✅
+access_dashboard("admin")  # ✅
+access_dashboard("admin")  # ❌ Max call
+access_dashboard("guest")  # ❌ Unauthorized
+```
+#### 🧠 Requirements:
+
+- Use inspect to extract the user argument.
+- Store call counts per user.
+- Print messages based on what condition failed.
+```
+---
