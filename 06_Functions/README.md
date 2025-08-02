@@ -976,3 +976,33 @@ access_dashboard("guest")  # ❌ Unauthorized
 - Print messages based on what condition failed.
 ```
 ---
+### 🧠 Exercise 06-45 — Type Validator Decorator
+
+**File Name:** `exercise_06_45_validate_argument_types.py`
+
+---
+
+#### 📋 Task:
+Write a decorator factory `validate_types()` that checks whether given arguments match their expected types.  
+If any mismatch is found, print a helpful error and prevent function execution.
+
+---
+
+#### ✨ Example:
+
+```python
+@validate_types(name=str, age=int, active=bool)
+def register(name, age, active=True):
+    print(f"✅ Registered {name}, age {age}, active={active}")
+
+register("Ali", 30, active=True)        # ✅
+register("Sara", "twenty", active=True) # ❌ age must be int
+register("Bob", 25, active="yes")       # ❌ active must be bool
+```
+#### ✅ Expected Output:
+```python
+✅ Registered Ali, age 30, active=True
+❌ Invalid type for argument "age": expected int, got str
+❌ Invalid type for argument "active": expected bool, got str
+```
+---
