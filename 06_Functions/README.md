@@ -867,3 +867,44 @@ Calculating 1 + 2...
 3
 ```
 ---
+### 🧠 Exercise 06-42 — Call Counter Decorator
+
+**File Name:** `exercise_06_42_call_counter_decorator.py`
+
+---
+
+#### 📋 Task:
+Create a decorator `call_counter` that tracks how many times a function has been called.
+
+- After each call, it should print:
+  🧮 Called func_name X times
+
+- Each decorated function must maintain its own independent counter.
+
+---
+
+#### 🧪 Example:
+
+```python
+@call_counter
+def greet(name):
+    print(f"Hello {name}")
+
+@call_counter
+def say_hi(name):
+    print(f"Hi {name}")
+
+say_hi('Alice')
+say_hi('John')
+greet('Bob')
+```
+#### ✅ Expected Output:
+```python
+Hi Alice
+🧮 Called say_hi 1 times
+Hi John
+🧮 Called say_hi 2 times
+Hello Bob
+🧮 Called greet 1 times
+```
+---
