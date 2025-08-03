@@ -1006,3 +1006,30 @@ register("Bob", 25, active="yes")       # ❌ active must be bool
 ❌ Invalid type for argument "active": expected bool, got str
 ```
 ---
+### 🧠 Exercise 06-47 — Basic Generator: Count up to n
+
+**File Name:** `exercise_06_47_count_up_to_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `count_up_to(n)` that yields numbers from 1 up to and including `n`, one at a time.
+
+---
+
+#### 🧪 Example:
+
+```python
+gen = count_up_to(5)
+for num in gen:
+    print(num)
+```
+#### Output:
+```python
+1
+2
+3
+4
+5
+```
+---
