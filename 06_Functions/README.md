@@ -1060,3 +1060,30 @@ for num in gen:
 10
 ```
 ---
+### 🧠 Exercise 06-49 — Countdown Generator
+
+**File Name:** `exercise_06_49_countdown_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `countdown_generator(n)` that yields numbers from `n` down to 1 (inclusive), one at a time.
+
+---
+
+#### 🧪 Example:
+
+```python
+gen = countdown_generator(5)
+for num in gen:
+    print(num)
+```
+#### Output:
+```python
+5
+4
+3
+2
+1
+```
+---
