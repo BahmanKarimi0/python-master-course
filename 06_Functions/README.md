@@ -1033,3 +1033,30 @@ for num in gen:
 5
 ```
 ---
+### 🧠 Exercise 06-48 — Generator for Even Numbers
+
+**File Name:** `exercise_06_48_even_numbers_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `even_numbers_up_to(n)` that yields all even numbers from 1 up to and including `n`.
+
+---
+
+#### 🧪 Example:
+
+```python
+gen = even_numbers_up_to(10)
+for num in gen:
+    print(num)
+```
+#### Output:
+```python
+2
+4
+6
+8
+10
+```
+---
