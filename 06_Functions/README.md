@@ -1087,3 +1087,31 @@ for num in gen:
 1
 ```
 ---
+### 🧠 Exercise 06-50 — Prime Numbers Generator
+
+**File Name:** `exercise_06_50_prime_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `prime_generator(n)` that yields all prime numbers from 2 up to and including `n`.
+
+You must not use any list, set, or external library — only `yield` and manual prime checking.
+
+---
+
+#### 🧪 Example:
+
+```python
+gen = prime_generator(10)
+for p in gen:
+    print(p)
+```
+#### Output:
+```python
+2
+3
+5
+7
+```
+---
