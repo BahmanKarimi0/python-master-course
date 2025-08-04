@@ -1167,3 +1167,30 @@ for c in gen:
 H e l l o B y e
 ```
 ---
+### 🧠 Exercise 06-53 — Infinite Fibonacci Generator
+
+**File Name:** `exercise_06_53_infinite_fibonacci_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `fibonacci_generator()` that yields an infinite sequence of Fibonacci numbers.
+
+- Must use `yield`
+- Must use `while True`
+- Do not use lists or store the entire sequence in memory
+
+---
+
+#### 🧪 Example:
+
+```python
+gen = fibonacci_generator()
+for _ in range(10):
+    print(next(gen), end=' ')
+```
+#### Output:
+```python
+0 1 1 2 3 5 8 13 21 34
+```
+---
