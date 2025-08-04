@@ -1221,3 +1221,31 @@ for i in reverse_range(10, 0, 2):
 10 8 6 4 2
 ```
 ---
+### 🧠 Exercise 06-55 — Perfect Squares Generator
+
+**File Name:** `exercise_06_55_perfect_squares_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `perfect_squares(lst)` that takes a list of integers and yields only the perfect square numbers.
+
+- Must use `yield`
+- Do not return a list
+- Use `math.isqrt()` for precise square root comparison
+
+---
+
+#### 🧪 Example:
+
+```python
+nums = [2, 4, 8, 9, 10, 16, 18, 25, 30]
+gen = perfect_squares(nums)
+for num in gen:
+    print(num, end=' ')
+```
+#### Output:
+```python
+4 9 16 25
+```
+---
