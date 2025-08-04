@@ -1143,3 +1143,27 @@ for line in gen:
 3: Goodbye
 ```
 ---
+### 🧠 Exercise 06-52 — Character Stream Generator
+
+**File Name:** `exercise_06_52_char_stream_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `char_stream(lst)` that takes a list of strings and yields each character from each string, in order.
+
+---
+
+#### 🧪 Example:
+
+```python
+sentences = ["Hello", "Bye"]
+gen = char_stream(sentences)
+for c in gen:
+    print(c, end=" ")
+```
+#### Output:
+```python
+H e l l o B y e
+```
+---
