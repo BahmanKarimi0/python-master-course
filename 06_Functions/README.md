@@ -1115,3 +1115,31 @@ for p in gen:
 7
 ```
 ---
+### 🧠 Exercise 06-51 — Generator with Internal State: Numbered Lines
+
+**File Name:** `exercise_06_51_numbered_lines_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `numbered_lines(lst)` that takes a list of strings and yields each line with its line number, starting from 1.
+
+Do not use `enumerate()` — you must implement manual numbering logic.
+
+---
+
+#### 🧪 Example:
+
+```python
+lines = ["Hello", "This is a test", "Goodbye"]
+gen = numbered_lines(lines)
+for line in gen:
+    print(line)
+```
+#### Output:
+```python
+1: Hello
+2: This is a test
+3: Goodbye
+```
+---
