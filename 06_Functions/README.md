@@ -1194,3 +1194,30 @@ for _ in range(10):
 0 1 1 2 3 5 8 13 21 34
 ```
 ---
+### 🧠 Exercise 06-54 — Custom Reverse Range Generator
+
+**File Name:** `exercise_06_54_reverse_range_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `reverse_range(start, end, step)` that yields numbers from start to end (exclusive), counting backwards by step.
+
+You must:
+- Not use `range()`
+- Not use any list or comprehension
+- Only use `yield` and a while loop
+
+---
+
+#### 🧪 Example:
+
+```python
+for i in reverse_range(10, 0, 2):
+    print(i, end=' ')
+```
+#### Output:
+```python
+10 8 6 4 2
+```
+---
