@@ -1380,3 +1380,31 @@ OK: 88
 🛑 Max alerts reached. Monitoring stopped.
 ```
 ---
+### 🧠 Exercise 06-60 — Dynamic Command Generator with `send()`
+
+**File Name:** `exercise_06_60_dynamic_command_generator.py`
+
+---
+
+#### 📋 Task:
+Write a coroutine-based generator `command_generator()` that:
+
+- Starts counting from 0
+- Yields `"Message number X"` each time
+- If it receives `'reset'` via `send()`, it resets the counter to 0
+- If it receives `'stop'`, it terminates and returns `"Finish"`
+
+---
+
+#### 🧪 Example:
+
+```python
+gen = command_generator()
+
+print(next(gen))          # Message number 0
+print(gen.send(None))     # Message number 1
+print(gen.send('reset'))  # Message number 0
+print(next(gen))          # Message number 1
+print(gen.send('stop'))   # Raises StopIteration with value 'Finish'
+```
+---
