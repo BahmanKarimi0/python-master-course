@@ -1347,3 +1347,36 @@ Logout
 Error
 ```
 ---
+### 🧠 Exercise 06-59 — Real-Time Alert Generator
+
+**File Name:** `exercise_06_59_real_time_alert_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `real_time_alert(data, threshold=100)` that:
+
+- Yields `"OK: value"` for values below the threshold
+- Yields `"⚠️ ALERT: value exceeded! (value)"` if value > threshold
+- After 3 alerts, yields `"🛑 Max alerts reached. Monitoring stopped."` and exits
+
+---
+
+#### 🧪 Example:
+
+```python
+data = [45, 55, 102, 88, 120, 101, 99, 80]
+
+for msg in real_time_alert(da
+```
+#### Output:
+```python
+OK: 45
+OK: 55
+⚠️ ALERT: value exceeded! (102)
+OK: 88
+⚠️ ALERT: value exceeded! (120)
+⚠️ ALERT: value exceeded! (101)
+🛑 Max alerts reached. Monitoring stopped.
+```
+---
