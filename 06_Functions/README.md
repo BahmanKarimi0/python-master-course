@@ -1249,3 +1249,38 @@ for num in gen:
 4 9 16 25
 ```
 ---
+### 🧠 Exercise 06-56 — Lazy Line Reader Generator
+
+**File Name:** `exercise_06_56_lazy_line_reader.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `lazy_line_reader(lst)` that yields lines from a list of strings one by one.
+
+- The generator should stop when it encounters an empty string (`''`)
+- Use only `yield`, no return or list-based processing
+
+---
+
+#### 🧪 Example:
+
+```python
+lines = [
+    "User: Alice",
+    "Action: Login",
+    "Status: Success",
+    "",
+    "This should not be printed"
+]
+
+for line in lazy_line_reader(lines):
+    print(line)
+```
+#### Output:
+```python
+User: Alice
+Action: Login
+Status: Success
+```
+---
