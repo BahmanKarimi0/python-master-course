@@ -1315,3 +1315,35 @@ for log in event_tracker(events):
 [3] Received event: Logout
 ```
 ---
+### 🧠 Exercise 06-58 — Filtered Events Generator
+
+**File Name:** `exercise_06_58_filtered_events_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `filtered_events(events, important)` that yields only those events which are present in the `important` list.
+
+- Use `yield` only.
+- Case-sensitive comparison.
+- No intermediate lists.
+
+---
+
+#### 🧪 Example:
+
+```python
+events = ["Login", "ViewProfile", "Logout", "Download", "Error", "Upload"]
+important = ["Login", "Logout", "Error"]
+
+gen = filtered_events(events, important)
+for log in gen:
+    print(log)
+```
+#### Output:
+```python
+Login
+Logout
+Error
+```
+---
