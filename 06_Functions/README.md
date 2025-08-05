@@ -1284,3 +1284,34 @@ Action: Login
 Status: Success
 ```
 ---
+### 🧠 Exercise 06-57 — Event Tracker Generator
+
+**File Name:** `exercise_06_57_event_tracker_generator.py`
+
+---
+
+#### 📋 Task:
+Write a generator function `event_tracker(events)` that yields formatted log messages for each event.
+
+Each message should be like:
+```text
+[1] Received event: Login
+```
+
+---
+
+#### 🧪 Example:
+
+```python
+events = ["Login", "ViewProfile", "Logout"]
+
+for log in event_tracker(events):
+    print(log)
+```
+#### Output:
+```python
+[1] Received event: Login
+[2] Received event: ViewProfile
+[3] Received event: Logout
+```
+---
