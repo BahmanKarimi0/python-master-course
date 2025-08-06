@@ -1408,3 +1408,28 @@ print(next(gen))          # Message number 1
 print(gen.send('stop'))   # Raises StopIteration with value 'Finish'
 ```
 ---
+### 🧠 Exercise 06-61 — Threshold Filter Coroutine
+
+**File Name:** `exercise_06_61_threshold_filter_coroutine.py`
+
+---
+
+#### 📋 Task:
+Write a coroutine function `filter_above(threshold)` that:
+
+- Accepts numeric input via `send()`
+- Yields a message indicating if the input is above the threshold
+- Closes gracefully with `.close()`
+
+---
+
+#### 🧪 Example Usage:
+
+```python
+f = filter_above(50)
+next(f)
+print(f.send(42))   # ❌ Rejected: 42
+print(f.send(75))   # ✅ Accepted: 75
+f.close()
+```
+---
