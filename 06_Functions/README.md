@@ -1433,3 +1433,48 @@ print(f.send(75))   # ✅ Accepted: 75
 f.close()
 ```
 ---
+### 🧠 Exercise 06-62 — Filter & Forward Coroutine (Pipeline Stage)
+
+**File Name:** `exercise_06_62_pipeline_filter_stage.py`
+
+---
+
+#### 📋 Task:
+Create a coroutine function `filter_and_forward(threshold, target_coroutine)` that:
+
+- Receives data via `send()`
+- Only forwards values greater than `threshold` to `target_coroutine` using `.send()`
+- Ignores values below or equal to threshold
+- Closes the `target_coroutine` when itself is closed
+
+---
+
+#### 🧪 Example:
+
+```python
+def printer():
+    try:
+        while True:
+            msg = yield
+            print(f'📥 Received in sink: {msg}')
+    except GeneratorExit:
+        print('🔚 Printer closed.')
+
+sink = printer()
+next(sink)
+
+stage = filter_and_forward(threshold=10, target_coroutine=sink)
+next(stage)
+
+stage.send(5)     # Ignored
+stage.send(20)    # Forwarded
+stage.send(12)    # Forwarded
+stage.close()     # Sink also closes
+```
+#### Output:
+```python
+📥 Received in sink: 20
+📥 Received in sink: 12
+🔚 Printer closed.
+```
+---
