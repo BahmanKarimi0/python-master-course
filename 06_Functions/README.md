@@ -1478,3 +1478,34 @@ stage.close()     # Sink also closes
 🔚 Printer closed.
 ```
 ---
+### 🧠 Exercise 06-63 — Accumulator Coroutine
+
+**File Name:** `exercise_06_63_accumulator_coroutine.py`
+
+---
+
+#### 📋 Task:
+Build a coroutine function `accumulator_and_print()` that:
+
+- Accepts numerical input via `.send()`
+- Keeps a running total and prints it
+- If `"reset"` is received, resets the total to 0 and prints a reset message
+- If invalid input is received (not number or "reset"), prints a warning
+- On close, prints shutdown message
+
+---
+
+#### 🧪 Example:
+
+```python
+acc = accumulator_and_print()
+next(acc)
+
+print(acc.send(10))        # 📈 Running total: 10
+print(acc.send(20))        # 📈 Running total: 30
+print(acc.send('reset'))   # 🔄 Total reset to 0
+print(acc.send(5))         # 📈 Running total: 5
+print(acc.send('oops'))    # ⚠️ Invalid input: 'oops'
+acc.close()                # 🔒 Coroutine closed gracefully.
+```
+---
