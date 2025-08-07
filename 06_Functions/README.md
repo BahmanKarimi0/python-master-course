@@ -1509,3 +1509,54 @@ print(acc.send('oops'))    # ⚠️ Invalid input: 'oops'
 acc.close()                # 🔒 Coroutine closed gracefully.
 ```
 ---
+# Exercise 06-64 — Pattern Filtering & Forwarding Coroutine
+
+**File Name:** `exercise_06_64_pattern_filter_forward.py`
+
+---
+
+## Task:
+
+Implement a coroutine function `filter_by_keyword(keyword, target)` that:
+
+- Receives messages (strings) via `.send()`
+- Checks if the message contains the specified `keyword`
+- If yes, forwards the message to the `target` coroutine
+- If the message is not a string, prints a warning message
+- Upon closing, closes the `target` coroutine as well
+
+---
+
+## Example usage:
+
+```python
+def logger():
+    try:
+        while True:
+            msg = yield
+            print(f"📝 Log: {msg}")
+    except GeneratorExit:
+        print("📕 Logger closed.")
+
+sink = logger()
+next(sink)
+
+fwd = filter_by_keyword(keyword="ERROR", target=sink)
+next(fwd)
+
+fwd.send("System started")
+fwd.send("ERROR: Disk failure")
+fwd.send("User logged in")
+fwd.send(123)  # warning for invalid input
+fwd.send("ERROR: Overheating")
+
+fwd.close()
+```
+#### Output:
+```python
+📝 Log: ERROR: Disk failure
+⚠️ Invalid input (not string): 123
+📝 Log: ERROR: Overheating
+📕 Logger closed.
+```
+---
