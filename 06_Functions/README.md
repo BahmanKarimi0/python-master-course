@@ -1560,3 +1560,39 @@ fwd.close()
 📕 Logger closed.
 ```
 ---
+## Exercise 06-65: SMA Calculation with Coroutines and Error Handling
+
+**Description**  
+Create a Python **coroutine** that receives temperature readings and calculates the **Simple Moving Average (SMA)** in real time.  
+The coroutine should handle the following cases:
+1. If the input is a number (`int` or `float`), update the SMA and yield the new value.
+2. If the input is the string `"reset"`, reset all calculations and start fresh.
+3. If the input is of an invalid type, print an informative error message showing:
+   - the expected types
+   - the actual type received
+   - the value itself
+4. On coroutine closure, print a shutdown message.
+
+---
+
+**Expected Behavior**  
+Given the input sequence:  
+```python
+tsma = temperature_monitoring()
+next(tsma)
+print(tsma.send(10))
+print(tsma.send(20))
+print(tsma.send(30))
+print(tsma.send('reset'))
+print(tsma.send(30))
+```
+#### Output:
+```python
+SMA: 10.00
+SMA: 15.00
+SMA: 20.00
+🔄 SMA values have been reset. Starting fresh from next input.
+SMA: 30.00
+🔒 Coroutine closed gracefully.
+```
+---
