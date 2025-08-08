@@ -1638,3 +1638,54 @@ LOG: COROUTINE
 LOG: PYTHON
 ```
 ---
+# Exercise 06-67: Delayed Message Sender Using Coroutine
+
+## Description
+
+Create a coroutine `delayed_sender(delay, target)` that receives messages,  
+waits for a specified `delay` (in seconds) before forwarding each message to a target coroutine.  
+
+Also implement a `sink_printer()` coroutine that receives messages and prints them.
+
+The coroutines work together to simulate delayed message passing.
+
+---
+
+## Functions
+
+- `delayed_sender(delay, target)`  
+  Receives messages, delays for `delay` seconds, then sends the message to `target`.  
+
+- `sink_printer()`  
+  Receives messages and prints them prefixed with `"Received:"`.  
+
+---
+
+## Example Usage
+
+```python
+import time
+
+sink = sink_printer()
+next(sink)
+
+delayed = delayed_sender(1, sink)
+next(delayed)
+
+messages = ["first", "second", "third"]
+start = time.time()
+
+for msg in messages:
+    delayed.send(msg)
+
+end = time.time()
+print(f"Total elapsed time: {end - start:.2f} seconds")
+```
+#### Output:
+```python
+Received: first
+Received: second
+Received: third
+Total elapsed time: 3.00 seconds
+```
+---
