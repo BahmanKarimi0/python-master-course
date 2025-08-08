@@ -1740,3 +1740,56 @@ Total messages received: 4
 Messages passed filter: 2
 ```
 ---
+# Exercise 06-69: Coroutine Pipeline with Keyword and Length Filters
+
+## Description
+
+Implement a coroutine pipeline with the following stages:
+
+1. `keyword_filter(keyword, target)`: Passes only messages containing the `keyword` (case-insensitive) to the next coroutine.
+2. `length_filter(min_length, target)`: Passes only messages with length greater than `min_length` to the next coroutine.
+3. `message_logger()`: Logs received messages by printing them.
+
+The messages flow through the pipeline in order: keyword filter → length filter → logger.
+
+---
+
+## Functions
+
+- `keyword_filter(keyword: str, target: coroutine)`
+- `length_filter(min_length: int, target: coroutine)`
+- `message_logger()`
+
+---
+
+## Example Usage
+
+```python
+log = message_logger()
+next(log)
+
+lf = length_filter(5, log)
+next(lf)
+
+kw = keyword_filter('error', lf)
+next(kw)
+
+messages = [
+    "Error 404",
+    "Critical error found",
+    "Warning: Disk full",
+    "Major error detected"
+]
+
+for msg in messages:
+    kw.send(msg)
+
+kw.close()
+```
+#### Output:
+```python
+Logged: Critical error found
+Logged: Major error detected
+🔒 Coroutine closed gracefully.
+```
+---
