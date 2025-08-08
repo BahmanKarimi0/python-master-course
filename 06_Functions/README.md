@@ -1596,3 +1596,45 @@ SMA: 30.00
 🔒 Coroutine closed gracefully.
 ```
 ---
+# Exercise 06-66: Coroutine-based Multi-Stage Pipeline
+
+## Description
+
+Build a multi-stage message processing pipeline using Python coroutines:
+
+1. **filter_by_length(min_length, target)**  
+   - Pass only string messages longer than `min_length` to the next coroutine.  
+   - If input is not a string, print an error message showing the invalid input and its type.  
+
+2. **to_upper(target)**  
+   - Convert incoming strings to uppercase and send to the next coroutine.  
+
+3. **logger()**  
+   - Receive strings and print them with the prefix `"LOG:"`.  
+
+The coroutines should be chained so messages flow from `filter_by_length` → `to_upper` → `logger`.  
+
+---
+
+## Sample usage
+
+```python
+log = logger()
+next(log)
+upper = to_upper(log)
+next(upper)
+fbl = filter_by_length(5, upper)
+next(fbl)
+
+fbl.send("hi")
+fbl.send("coroutine")
+fbl.send(123)
+fbl.send("python")
+```
+#### Output:
+```python
+⚠️ Invalid input type: expected str, got int (123)
+LOG: COROUTINE
+LOG: PYTHON
+```
+---
