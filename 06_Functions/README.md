@@ -1689,3 +1689,54 @@ Received: third
 Total elapsed time: 3.00 seconds
 ```
 ---
+# Exercise 06-68: Coroutine Advanced Filter with Message Statistics
+
+## Description
+
+Create a coroutine function `advanced_filter(keyword, min_length, target)` that receives messages and forwards only those messages to the `target` coroutine that:
+
+- Contain the specified `keyword` (case-insensitive),
+- Have length greater than `min_length`.
+
+The coroutine should count the total messages received and the number of messages that passed the filter. When the coroutine is closed (using `.close()`), it should print these statistics.
+
+Create another coroutine `message_logger()` that receives messages and logs them by printing.
+
+---
+
+## Functions
+
+- `advanced_filter(keyword: str, min_length: int, target: coroutine)`
+- `message_logger()`
+
+---
+
+## Example Usage
+
+```python
+log = message_logger()
+next(log)
+
+filterer = advanced_filter('error', 10, log)
+next(filterer)
+
+messages = [
+    "Error 404",           # filtered out (length < 10)
+    "Critical error found",# passed filter
+    "Warning: Disk full",  # filtered out (keyword not found)
+    "Major error detected" # passed filter
+]
+
+for msg in messages:
+    filterer.send(msg)
+
+filterer.close()
+```
+#### Output:
+```python
+Logged: Critical error found
+Logged: Major error detected
+Total messages received: 4
+Messages passed filter: 2
+```
+---
