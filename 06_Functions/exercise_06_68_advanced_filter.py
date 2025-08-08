@@ -33,14 +33,15 @@ next(filterer)
 
 
 messages = [
-    "Error 404",           # رد می‌شود (کمتر از 10 کاراکتر)
-    "Critical error found",# قبول می‌شود
-    "Warning: Disk full",  # رد می‌شود (کلمه کلیدی نیست)
-    "Major error detected" # قبول می‌شود
+    "Error 404",           
+    "Critical error found",
+    "Warning: Disk full",  
+    "Major error detected" 
 ]
 
 for msg in messages:
     filterer.send(msg)
 
 filterer.close()
+
 
