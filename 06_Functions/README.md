@@ -1829,3 +1829,41 @@ Final sum: 8
 🔒 Coroutine closed gracefully.
 ```
 ---
+# Exercise 06-71: Coroutine Pipeline for Text Processing
+
+## Description
+
+Implement a coroutine pipeline that processes lines of text through multiple stages. Each stage is a coroutine that performs a specific transformation or filtering on the text, then passes the result to the next stage.
+
+The pipeline stages are:
+
+1. **Keyword Filter**: Only passes lines containing a specified keyword (case-insensitive).
+2. **Length Filter**: Only passes lines longer than a specified minimum length.
+3. **Uppercase Transformer**: Transforms lines to uppercase.
+4. **Logger**: Prints the final processed lines.
+
+The pipeline should properly handle:
+
+- Invalid input types (print a warning message).
+- Graceful closing of coroutines.
+- Data should flow from one stage to the next via `send()` calls.
+
+## Expected Behavior
+
+Given the input data:
+
+```python
+[
+  'CRITICAL ERROR detected',
+  'CRITICAL disk FAILURE',
+  'CRITICAL MEMORY error',
+  'minor issue logged'
+]
+```
+#### Output:
+```python
+LOG: CRITICAL ERROR DETECTED
+LOG: CRITICAL DISK FAILURE
+LOG: CRITICAL MEMORY ERROR
+```
+---
