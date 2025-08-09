@@ -1793,3 +1793,39 @@ Logged: Major error detected
 🔒 Coroutine closed gracefully.
 ```
 ---
+## 📝 Exercise 06-70: Coroutine Pipeline with State & Error Handling
+
+### 🎯 Objective
+In this exercise, you'll build a **coroutine pipeline** that:
+1. Receives inputs and validates their type.
+2. Accepts only integers (`int`).
+3. Passes only **even** numbers to the next stage.
+4. Accumulates the sum of positive numbers until a negative number is received.
+5. Closes all coroutines gracefully without raising `StopIteration`.
+
+---
+
+### 📌 Details
+- Use the `.close()` method to terminate coroutines safely.
+- If an invalid data type is received, print a warning but **do not** stop the program.
+- Implement the logic as a chain of coroutines (**pipeline**).
+- On closing each coroutine, print a message so the shutdown sequence is clear.
+
+---
+
+### 📥 Sample Input
+```python
+[2, 6, "oops", -4, 10]
+```
+#### Output:
+```python
+Running sum: 2
+Running sum: 8
+⚠️ Invalid input type: expected int, got str ('oops')
+Negative number received, closing accumulator.
+Final sum: 8
+📥 Input receiver closed.
+🔍 Even filter closed.
+🔒 Coroutine closed gracefully.
+```
+---
