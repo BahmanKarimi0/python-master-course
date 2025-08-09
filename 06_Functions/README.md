@@ -1867,3 +1867,22 @@ LOG: CRITICAL DISK FAILURE
 LOG: CRITICAL MEMORY ERROR
 ```
 ---
+# Exercise 06-72: Recursive Factorial Function
+
+## Problem Statement
+
+Write a recursive function named `factorial` that takes a non-negative integer `n` as input and returns the factorial of `n`.
+
+- If `n` is 0, the function should return 1.
+- Otherwise, the function should return `n * factorial(n - 1)`.
+
+**Notes:**  
+- The input will always be a non-negative integer.  
+- Do **not** use loops; implement the solution using recursion only.
+
+## Example
+
+```python
+factorial(5)  # Output: 120
+```
+--
