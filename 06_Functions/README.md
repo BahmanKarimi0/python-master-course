@@ -2073,3 +2073,32 @@ count_char("hello world", "l")  # Output: 3
 count_char("", "x")              #_
 ```
 ---
+# Exercise 06-80: Recursive Find All Indices of a Character in a String
+
+## Problem Statement
+
+Write a recursive function named `find_all_indices` that takes a string `text` and a character `char`, and returns a list of all indices in `text` where `char` occurs.
+
+---
+
+## Requirements
+
+- Use recursion only (no loops).
+- Inputs:
+  - `text`: a string.
+  - `char`: a single character string (length must be 1).
+  - `index` (optional): integer for the current search position (used internally).
+  - `result` (optional): list to store indices found so far (used internally).
+- Validate input types and `char` length.
+- Return a list of integer indices.
+
+---
+
+## Example
+
+```python
+find_all_indices("abracadabra", "a")  # Output: [0, 3, 5, 7, 10]
+find_all_indices("hello world", "l")  # Output: [2, 3, 9]
+find_all_indices("test", "z")          # Output: []
+```
+---
