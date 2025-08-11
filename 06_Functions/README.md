@@ -1930,3 +1930,25 @@ recursive_sum([1, 2, 3, 4])  # Output: 10
 recursive_sum([])            # Output: 0
 ```
 ---
+# Exercise 06-75: Reverse a String Using Recursion
+
+## Problem Statement
+
+Write a recursive function named `reverse_string` that takes a string as input and returns its reversed version.
+
+### Requirements
+- Do **not** use loops (`for`, `while`).
+- Use recursion only.
+- Input must be of type `str`, otherwise raise a `TypeError`.
+- If the string is empty, return an empty string.
+
+---
+
+## Example
+
+```python
+reverse_string("python")    # Output: "nohtyp"
+reverse_string("a")         # Output: "a"
+reverse_string("")          # Output: ""
+```
+---
