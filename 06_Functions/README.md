@@ -1906,4 +1906,27 @@ The Fibonacci sequence is defined as:
 ```python
 fibonacci(5)  # Output: 5
 ```
---
+---
+# Exercise 06-74: Recursive Sum of a List
+
+## Problem Statement
+
+Write a recursive function named `recursive_sum` that takes a list of numbers as input and returns the sum of all its elements using **recursion**.
+
+### Requirements
+- If the list is empty, return `0`.
+- Do **not** use loops (`for`, `while`).
+- The function should validate that:
+  - The input is indeed a list.
+  - All elements in the list are integers or floats.
+- Use an `index` parameter to avoid creating new lists (no slicing).
+
+---
+
+## Example
+
+```python
+recursive_sum([1, 2, 3, 4])  # Output: 10
+recursive_sum([])            # Output: 0
+```
+---
