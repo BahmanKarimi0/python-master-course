@@ -1885,4 +1885,25 @@ Write a recursive function named `factorial` that takes a non-negative integer `
 ```python
 factorial(5)  # Output: 120
 ```
+---
+# Exercise 06-73: Recursive Fibonacci Function
+
+## Problem Statement
+
+Write a recursive function named `fibonacci` that takes a non-negative integer `n` as input and returns the `n`-th number in the Fibonacci sequence.
+
+The Fibonacci sequence is defined as:
+- `fibonacci(0) = 0`
+- `fibonacci(1) = 1`
+- For `n >= 2`: `fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2)`
+
+**Notes:**
+- The input will always be a non-negative integer.
+- Do **not** use loops; implement the solution using recursion only.
+
+## Example
+
+```python
+fibonacci(5)  # Output: 5
+```
 --
