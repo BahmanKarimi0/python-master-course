@@ -2018,3 +2018,30 @@ gcd(101, 103) # Output: 1
 gcd(-48, 18)  # Output: 6
 ```
 ---
+# Exercise 06-78: Recursive Palindrome Check
+
+## Problem Statement
+
+Write a recursive function named `is_palindrome` that takes a string as input and returns `True` if the string is a palindrome, otherwise returns `False`.
+
+---
+
+## Requirements
+
+- Use recursion only (no loops).
+- The input will always be a string.
+- The check is case-sensitive and considers all characters (no ignoring spaces or cases).
+- Return `True` for empty strings and single-character strings.
+
+---
+
+## Example
+
+```python
+is_palindrome("madam")    # True
+is_palindrome("hello")    # False
+is_palindrome("racecar")  # True
+is_palindrome("a")        # True
+is_palindrome("")         # True
+```
+---
