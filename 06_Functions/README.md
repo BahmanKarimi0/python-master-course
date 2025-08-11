@@ -1983,3 +1983,38 @@ power(5, 0)   # Output: 1
 power(3, 2)   # Output: 9
 ```
 ---
+# Exercise 06-77: Recursive Greatest Common Divisor (GCD)
+
+## Problem Statement
+
+Write a recursive function named `gcd` that takes two integers `a` and `b` as input and returns their Greatest Common Divisor (GCD) using the **Euclidean Algorithm**.
+
+### Euclidean Algorithm:
+
+\[
+\text{gcd}(a, b) = 
+\begin{cases} 
+a & \text{if } b = 0 \\
+\text{gcd}(b, a \bmod b) & \text{otherwise}
+\end{cases}
+\]
+
+---
+
+## Requirements
+
+- Inputs `a` and `b` must be integers.
+- If inputs are negative, convert them to their absolute values before computation.
+- Use recursion only (no loops).
+- Raise a `TypeError` if inputs are not integers.
+
+---
+
+## Example
+
+```python
+gcd(48, 18)   # Output: 6
+gcd(101, 103) # Output: 1
+gcd(-48, 18)  # Output: 6
+```
+---
