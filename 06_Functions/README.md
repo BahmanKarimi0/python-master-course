@@ -1952,3 +1952,34 @@ reverse_string("a")         # Output: "a"
 reverse_string("")          # Output: ""
 ```
 ---
+# Exercise 06-76: Calculate Power Using Recursion
+
+## Problem Statement
+
+Write a recursive function named `power` that takes two numbers `base` and `exp` and calculates:
+
+\[
+base^{exp}
+\]
+
+without using the `**` operator or the built-in `pow()` function.
+
+---
+
+## Requirements
+- Use **recursion only** (no loops).
+- `base` must be an `int` or `float`.
+- `exp` must be a **non-negative integer**.
+- If `exp` is `0`, return `1`.
+- If the input is invalid, raise a `TypeError` or `ValueError` with an appropriate message.
+
+---
+
+## Example
+
+```python
+power(2, 3)   # Output: 8
+power(5, 0)   # Output: 1
+power(3, 2)   # Output: 9
+```
+---
