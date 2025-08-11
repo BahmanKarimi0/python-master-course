@@ -2045,3 +2045,31 @@ is_palindrome("a")        # True
 is_palindrome("")         # True
 ```
 ---
+# Exercise 06-79: Recursive Count of a Character in a String
+
+## Problem Statement
+
+Write a recursive function named `count_char` that counts the number of occurrences of a given character in a string.
+
+---
+
+## Requirements
+
+- Use recursion only (no loops).
+- Inputs:
+  - `word`: a string.
+  - `char`: a single character string (length must be 1).
+  - `index` (optional): an integer to track the current position in the string (used internally, default is 0).
+- Validate input types and length of `char`.
+- Return the total count of `char` in `word`.
+
+---
+
+## Example
+
+```python
+count_char("abracadabra", "a")  # Output: 5
+count_char("hello world", "l")  # Output: 3
+count_char("", "x")              #_
+```
+---
