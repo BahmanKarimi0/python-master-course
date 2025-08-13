@@ -2164,3 +2164,40 @@ find_max([3, 9, 23, 12, 5])    # Output: 23
 find_max([-5, -1, -9])         # Output: -1
 ```
 ---
+# Exercise 06_83: Recursive Flatten Nested List
+
+## Problem Statement
+Write a recursive function `flatten` that takes a nested list and returns a flat list containing all the elements.
+
+---
+
+## Requirements
+- **Input:**
+  - `nested`: a list that may contain other lists (nested to any depth) or individual elements (int, float, str, etc.).
+  - `index` *(optional)*: helper parameter to track the current position in recursion. Default is `0`.
+  - `result` *(optional)*: helper parameter to accumulate the flattened elements. Default is `None`.
+- **Output:** a flat list containing all elements in order.
+- **Constraints:**
+  - Use recursion only (no loops).
+  - Use the helper parameter `result` to accumulate the output.
+  - Validate that `nested` is a list; otherwise, raise `TypeError`.
+
+---
+
+## Function Signature
+```python
+def flatten(nested: list, index: int = 0, result: list = None) -> list:
+    ...
+```
+#### Output:
+```python
+flatten([1, 3, [1, 2, 3], [4, 5, 6], 5])
+# Output: [1, 3, 1, 2, 3, 4, 5, 6, 5]
+
+flatten([])
+# Output: []
+
+flatten([[['a']], ['b', ['c']]])
+# Output: ['a', 'b', 'c']
+```
+---
