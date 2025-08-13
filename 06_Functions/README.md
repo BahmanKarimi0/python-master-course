@@ -2102,19 +2102,32 @@ find_all_indices("hello world", "l")  # Output: [2, 3, 9]
 find_all_indices("test", "z")          # Output: []
 ```
 ---
-def sum_of_digits(num, total=0):
-    if not isinstance(num, int):
-        raise TypeError('num must be an integer')
-    num = abs(num)
-    if num == 0:
-        return total
-    total += num % 10
-    return sum_of_digits(num // 10, total)
+# Exercise 06_81: Recursive Sum of Digits
 
+## Problem Statement
+Write a recursive function `sum_of_digits` that calculates the sum of the digits of an integer number.
 
-print(sum_of_digits(12345))   # 15
-print(sum_of_digits(-987))    # 24
-print(sum_of_digits(0))       # 0
+---
 
+## Requirements
+- The input must be an integer; otherwise, raise a `TypeError`.
+- If the input is negative, convert it to its absolute value before processing.
+- Do not use loops; recursion must be used.
+- Use a helper parameter `total` to accumulate the sum of digits.
+- Use integer division (`//`) and modulo (`%`) instead of converting the number to a string.
+
+---
+
+## Function Signature
+```python
+def sum_of_digits(num: int, total: int = 0) -> int:
+```
+
+#### Output:
+```python
+sum_of_digits(12345)   # Output: 15
+sum_of_digits(-987)    # Output: 24
+sum_of_digits(0)       # Output: 0
 ```
 ---
+
