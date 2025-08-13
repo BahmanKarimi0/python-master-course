@@ -2201,3 +2201,30 @@ flatten([[['a']], ['b', ['c']]])
 # Output: ['a', 'b', 'c']
 ```
 ---
+# Exercise 06_84 - Recursive Binary Search
+
+## Problem
+Implement a **recursive** version of the binary search algorithm to find the index of a target element in a list.  
+The list may not be sorted initially, so the function should sort it before performing the search.
+
+### Requirements:
+1. The function should:
+   - Accept a list of integers/floats.
+   - Accept the target item to search for.
+   - Use recursion to divide the search range until the element is found or the range becomes empty.
+2. Raise appropriate errors if:
+   - The input is not a list.
+   - The list is empty.
+3. Return:
+   - The index of the found element in the sorted list.
+   - `-1` if the element does not exist.
+
+---
+
+## Example
+
+```python
+print(binary_search([1, 4, 5, 6, 3, 5, 7, 9], 5))  # Example output: 2
+print(binary_search([1, 3, 5, 7, 9], 8))          # Output: -1
+```
+---
