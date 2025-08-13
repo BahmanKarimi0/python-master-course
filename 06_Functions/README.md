@@ -2131,3 +2131,36 @@ sum_of_digits(0)       # Output: 0
 ```
 ---
 
+# Exercise 06_82: Recursive Maximum in List
+
+## Problem Statement
+Write a recursive function `find_max` that returns the largest number in a list.
+
+---
+
+## Requirements
+- **Inputs:**
+  - `numbers`: A list containing integers or floats.
+  - `index` *(optional)*: Helper parameter to track the current index in recursion. Default is `0`.
+  - `current_max` *(optional)*: Helper parameter to store the maximum value found so far. Default is `None`.
+- **Validation:**
+  - The input must be of type `list`.
+  - The list cannot be empty.
+  - All elements in the list must be integers or floats.
+- **Restrictions:**
+  - Do not use loops (`for` or `while`).
+  - Use recursion to traverse the list.
+
+---
+
+## Function Signature
+```python
+def find_max(numbers: list, index: int = 0, current_max=None) -> float:
+    ...
+```
+#### Output:
+```python
+find_max([3, 9, 23, 12, 5])    # Output: 23
+find_max([-5, -1, -9])         # Output: -1
+```
+---
