@@ -2256,3 +2256,31 @@ count_paths(3, 3)  # Output: 6
 count_paths(4, 3)  # Output: 10
 ```
 ---
+# Exercise 06_86 - Reverse Words in a String (Recursive)
+
+## Problem
+Write a **recursive** function `reverse_words` that takes a string of words separated by spaces and returns a string with the **words in reverse order**.  
+Do **not** reverse the letters inside the words, only the order of the words.  
+
+### Requirements:
+1. The function should:
+   - Accept a string as input.
+   - Use recursion to reverse the words.
+   - Optionally use helper parameters to track the current index and intermediate results.
+2. Raise a `TypeError` if the input is not a string.
+3. Return a string with the words reversed.
+
+---
+
+## Function Signature
+```python
+def reverse_words(s: str, index: int = 0, current_word: str = '', result: list = None) -> str:
+    ...
+```
+#### Output:
+```python
+reverse_words("hello world")      # Output: "world hello"
+reverse_words("Python is fun")    # Output: "fun is Python"
+reverse_words("Recursion rocks!") # Output: "rocks! Recursion"
+```
+---
