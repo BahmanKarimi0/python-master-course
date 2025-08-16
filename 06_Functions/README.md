@@ -2284,3 +2284,32 @@ reverse_words("Python is fun")    # Output: "fun is Python"
 reverse_words("Recursion rocks!") # Output: "rocks! Recursion"
 ```
 ---
+# Exercise 06_87 - Count Subsets with Target Sum (Recursive)
+
+## Problem
+Write a **recursive** function `count_subsets` that counts the number of subsets in a list of positive integers whose sum equals a given `target`.  
+
+### Requirements:
+1. The function should:
+   - Accept a list of positive integers.
+   - Accept a positive integer `target`.
+   - Use recursion to explore all possible subsets.
+   - Use a helper parameter `index` to track the current position in the list.
+2. Raise a `TypeError` if the input is not a list.
+3. Return the total number of subsets whose sum equals `target`.
+4. Do **not** use loops; only recursion.
+
+---
+
+## Function Signature
+```python
+def count_subsets(lst: list, target: int, index: int = 0) -> int:
+    ...
+```
+#### Output:
+```python
+count_subsets([1, 2, 3], 3)       # Output: 2  → subsets: [1,2], [3]
+count_subsets([2, 4, 6, 10], 16) # Output: 2  → subsets: [2,4,10], [6,10]
+count_subsets([1, 2, 3, 6], 6)   # Output: 2  → subsets: [6], [1,2,3]
+```
+---
