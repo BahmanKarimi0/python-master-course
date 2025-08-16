@@ -2228,3 +2228,31 @@ print(binary_search([1, 4, 5, 6, 3, 5, 7, 9], 5))  # Example output: 2
 print(binary_search([1, 3, 5, 7, 9], 8))          # Output: -1
 ```
 ---
+# Exercise 06_85 - Count All Paths in a Grid (Recursive with Memoization)
+
+## Problem
+Write a **recursive** function `count_paths` that calculates the number of unique paths from the top-left corner `(0, 0)` to the bottom-right corner `(n-1, m-1)` in an `n x m` grid.  
+You may only move **right** or **down**.  
+
+### Requirements:
+1. The function should:
+   - Accept two positive integers `n` (rows) and `m` (columns).
+   - Use recursion to explore all possible paths.
+   - Use **memoization** to optimize repeated subproblems.
+2. Raise a `ValueError` if `n` or `m` are less than or equal to 0.
+3. Return the total number of unique paths.
+
+---
+
+## Function Signature
+```python
+def count_paths(n: int, m: int, row: int = 0, col: int = 0, memo: dict = None) -> int:
+    ...
+```
+#### Output:
+```python
+count_paths(2, 2)  # Output: 2
+count_paths(3, 3)  # Output: 6
+count_paths(4, 3)  # Output: 10
+```
+---
