@@ -2342,3 +2342,45 @@ Write a **recursive** function that determines whether the characters of a given
 
 ---
 ---
+# Exercise 06_89 – Generate All Substrings (Recursive)
+
+## Problem
+
+Write a **recursive** function called `generate_substrings` that returns **all substrings** of a given string.
+
+A substring is any contiguous slice of the string (e.g., `"ab"` → `"a"`, `"b"`, `"ab"`).
+
+You **must not** use loops.  
+Instead, use two helper parameters (`start_index` and `end_index`) to simulate the two nested loops.
+
+---
+
+## Requirements
+
+- Input: a string  
+- Output: a list of all substrings
+- Use **recursion only** – no `for`/`while` loops.
+- If the input is not a string, raise a `TypeError`.
+
+---
+
+## Function Signature
+
+```python
+def generate_substrings(string: str, start_index: int = 0,
+                        end_index: int = 0, result: list = None) -> list:
+    ...
+```
+#### Output:
+```python
+generate_substrings("abc")
+# Output: ['a', 'ab', 'abc', 'b', 'bc', 'c']
+
+generate_substrings("ab")
+# Output: ['a', 'ab', 'b']
+
+generate_substrings("")
+# Output: []
+
+```
+---
