@@ -2313,3 +2313,32 @@ count_subsets([2, 4, 6, 10], 16) # Output: 2  → subsets: [2,4,10], [6,10]
 count_subsets([1, 2, 3, 6], 6)   # Output: 2  → subsets: [6], [1,2,3]
 ```
 ---
+# Exercise 06_88 – Can Form Palindrome (Recursive)
+
+## Problem
+
+Write a **recursive** function that determines whether the characters of a given string can be **rearranged** to form a palindrome.
+
+---
+
+## Requirements
+
+- Input must be a string.  
+  → Otherwise, raise `TypeError`.
+- Use **recursion**, not loops.
+- Use one or more helper parameters (for example: `index`, a dictionary to count characters, or an `odd_count` counter).
+- Return `True` if the string can be rearranged into a palindrome, otherwise `False`.
+
+---
+
+## Examples
+
+| Input     | Output |
+|-----------|--------|
+| "civic"   | True   |
+| "ivicc"   | True   |
+| "hello"   | False  |
+| "racecar" | True   |
+
+---
+---
