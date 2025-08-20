@@ -2462,3 +2462,31 @@ print(min_parens_removal(")("))        # 2
 print(min_parens_removal("a(b)c"))     # 0
 ```
 ---
+# Exercise 06_92 – Count Digit Occurrences (Recursive)
+
+## Problem
+
+Write a **recursive** function that counts how many times a specific **digit** appears inside an integer (positive or negative).
+
+---
+
+## Requirements
+
+- Input:
+  - `numbers`: an integer (can be negative)
+  - `digit`: a single digit from 0 to 9
+- Output:
+  - The number of times `digit` appears in `numbers`
+- Use **recursion only** (no loops).
+- Convert negative numbers to positive using `abs()`.
+- If `digit` is not in the range `0..9`, raise a `ValueError`.
+- If the input types are invalid, raise a `TypeError`.
+
+---
+
+## Examples
+
+```python
+count_digit_occurrences(73373, 7)     # Output: 3
+count_digit_occurrences(-2020402, 2)  # Output: 4
+count_digit_occurrences(1005, 6)      # Output: 0
