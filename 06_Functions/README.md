@@ -2415,3 +2415,50 @@ reverse_nested([10, [20, 30], 40])
 # ➝ [40, [30, 20], 10]
 ```
 ---
+# Exercise 06_91 – Minimum Parentheses Removal (Recursive)
+
+## Problem
+
+Write a **recursive** function that determines the **minimum number of parentheses** that need to be removed from a string in order to make it a **valid** parenthesis expression.
+
+---
+
+## Rules
+
+| Character | Meaning                                                |
+|----------|---------------------------------------------------------|
+| `(`      | Opens a new parenthesis                                |
+| `)`      | Closes a previously opened parenthesis (if any exist)  |
+| Other    | Ignored                                                 |
+
+---
+
+## Requirements
+
+- Use **recursion only** (no loops).
+- Use helper parameters to keep track of:
+  - `open_count` → how many open `(` have not been closed yet
+  - `remove_count` → how many invalid `)` have been removed so far
+- If the input is not a string, raise a `TypeError`.
+- Return an integer (minimum number of parentheses to remove).
+
+---
+
+## Examples
+
+| Input         | Output |
+|---------------|--------|
+| `"(()"`        | 1      |
+| `"())"`        | 1      |
+| `")("`         | 2      |
+| `"a(b)c"`      | 0      |
+
+
+# Example usage
+```python
+print(min_parens_removal("(()"))       # 1
+print(min_parens_removal("())"))       # 1
+print(min_parens_removal(")("))        # 2
+print(min_parens_removal("a(b)c"))     # 0
+```
+---
