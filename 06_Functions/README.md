@@ -2384,3 +2384,34 @@ generate_substrings("")
 
 ```
 ---
+# Exercise 06_90 – Reverse Nested List (Recursive, In-Place Logic)
+
+## Problem
+
+Write a **recursive** function that takes a (possibly nested) list and returns a new list where:
+- The main list is reversed.
+- All **inner lists** are also reversed recursively.
+
+> ⚠️ You must **not** use loops.  
+> The reversal should be done recursively.
+> (The logic is in-place, but for simplicity the function returns the result.)
+
+---
+
+## Requirements
+- Input must be of type `list`, otherwise raise a `TypeError`.
+- Only recursion is allowed — no `for` or `while` loops.
+- If an element is itself a list, apply the same function to that element before placing it in the reversed result.
+
+---
+
+## Examples
+
+```python
+reverse_nested([1, [2, 3], [4, [5, 6]], 7])
+# ➝ [7, [[6, 5], 4], [3, 2], 1]
+
+reverse_nested([10, [20, 30], 40])
+# ➝ [40, [30, 20], 10]
+```
+---
