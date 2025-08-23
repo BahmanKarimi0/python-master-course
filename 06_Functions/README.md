@@ -2490,3 +2490,35 @@ Write a **recursive** function that counts how many times a specific **digit** a
 count_digit_occurrences(73373, 7)     # Output: 3
 count_digit_occurrences(-2020402, 2)  # Output: 4
 count_digit_occurrences(1005, 6)      # Output: 0
+```
+---
+# Exercise 06_93 – Remove a Digit from a Number (Recursive)
+
+## Problem
+Write a **recursive** function that takes an integer `number` (can be negative) and a single `digit` (0–9), and returns a new integer obtained by **removing all occurrences** of `digit` from `number`.  
+The **relative order** of the remaining digits must be preserved.
+
+---
+
+## Requirements
+- Use **recursion only** (no loops).
+- `number` must be an `int`; `digit` must be an `int` in `[0, 9]`.
+- If `number` is negative, remove the digit from its absolute value and then reapply the sign.
+- If all digits are removed, return `0`.
+
+---
+
+## Function Signature
+```python
+def remove_digit(number: int, digit: int) -> int:
+    ...
+```
+#### Example:
+```python
+remove_digit(12335, 3)    # 125
+remove_digit(30030, 0)    # 33
+remove_digit(-425242, 2)  # -454
+remove_digit(0, 0)        # 0
+remove_digit(1005, 6)     # 1005
+```
+---
