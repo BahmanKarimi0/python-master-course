@@ -2522,3 +2522,35 @@ remove_digit(0, 0)        # 0
 remove_digit(1005, 6)     # 1005
 ```
 ---
+# Exercise 06_94 – Power Function (Recursive)
+
+## Problem
+Write a **recursive** function that computes the result of raising a number `x` to the power of `n` (that is, computes \(x^n\)).
+
+---
+
+## Requirements
+- The function should accept:
+  - `x`: an integer or float (the base)
+  - `n`: a non-negative integer (the exponent)
+- No loops are allowed — **only recursion**.
+- Handle the following:
+  - \(x^0 = 1\) for any `x ≠ 0`.
+  - If `n < 0`, raise a `ValueError`.
+  - If `x == 0` and `n == 0`, raise a `ValueError` (undefined case).
+
+---
+
+## Function Signature
+```python
+def power(x: float, n: int) -> float:
+    ...
+```
+#### Example:
+```python
+power(2, 3)     # 8
+power(5, 0)     # 1
+power(3, 4)     # 81
+power(2.5, 3)   # 15.625
+```
+---
