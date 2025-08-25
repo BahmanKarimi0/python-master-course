@@ -77,7 +77,7 @@ print(circle.area())         # 78.54...
 print(circle.circumference()) # 31.41...
 ```
 ---
-# OOP Exercise 07-02 - Rectangle Area and Perimeter
+# OOP Exercise 07-04 - Rectangle Area and Perimeter
 
 ## Task
 Write a Python class called **`Rectangle`** that represents a rectangle.  
@@ -86,15 +86,11 @@ The class should:
 1. Have two attributes: `length` and `width`.
 2. Include a constructor (`__init__`) to initialize these attributes.
 3. Implement a method **`area()`** that returns the area of the rectangle.
-   - Formula:  
-     \[
-     A = \text{length} \times \text{width}
-     \]
+   - Formula (rendered as image):
+   ![Area formula](https://latex.codecogs.com/png.latex?A%20%3D%20\text{length}%20\times%20\text{width})
 4. Implement a method **`perimeter()`** that returns the perimeter of the rectangle.
-   - Formula:  
-     \[
-     P = 2 \times (\text{length} + \text{width})
-     \]
+   - Formula (rendered as image):
+   ![Perimeter formula](https://latex.codecogs.com/png.latex?P%20%3D%202%20\times%20(\text{length}%20+%20\text{width}))
 
 ## Example
 ```python
