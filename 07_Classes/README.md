@@ -61,3 +61,19 @@ distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
 \]
 
 ---
+## Exercise 07-02: Circle Area and Circumference
+
+### Description
+Write a Python class called `Circle` that:
+1. Initializes with a radius.
+2. Has a method `area()` to calculate the area of the circle.
+3. Has a method `circumference()` to calculate the circumference of the circle.
+4. Raises a `ValueError` if the radius is not positive.
+
+### Example
+```python
+circle = Circle(5)
+print(circle.area())         # 78.54...
+print(circle.circumference()) # 31.41...
+```
+---
