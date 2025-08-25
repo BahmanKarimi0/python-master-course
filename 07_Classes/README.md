@@ -37,3 +37,27 @@ This exercise introduces:
 - `Point2D("3", 4)` → raises `TypeError`
 
 ---
+# Exercise 07_02 — Point Distance
+
+**Filename:** `exercise_07_02_point_distance.py`
+
+## Objective
+Extend the `Point2D` class by adding an instance method to compute the **Euclidean distance** to another point.
+
+## Requirements
+1. Add a method:
+   ```python
+   def distance_to(self, other: "Point2D") -> float:
+       ...
+   ```
+### Problem Statement (English)
+Implement a method named `distance_to` inside the `Point2D` class that calculates the Euclidean distance between two points in a 2D plane.  
+The method should accept another `Point2D` object as an argument and return the distance as a number.
+
+The formula for the Euclidean distance between two points A(x₁, y₁) and B(x₂, y₂) is:
+
+\[
+distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\]
+
+---
