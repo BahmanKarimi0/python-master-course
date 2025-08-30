@@ -172,3 +172,25 @@ print(car.brand)
 Lamborghini
 ```
 ---
+# Exercise 07_08 - Multiple Car Objects with Attributes
+
+## Objective
+Practice creating **multiple objects** from the same class in Python and assigning **different attribute values** to each object.
+
+## Exercise
+- Define a class `Car` with attributes `brand` and `year`.  
+- Create three different objects (`car1`, `car2`, `car3`) with unique brands and years.  
+- Print the attributes of each object to verify that they hold different values.
+
+## Key Takeaways
+- Each object can have its own unique attribute values even if they are created from the same class.  
+- Validating data during object creation ensures robustness.  
+- Using `__init__` allows you to initialize object attributes efficiently.
+
+## Output:
+```python
+BMW - 2021
+Mercedes - 2022
+Ford - 2023
+```
+---
