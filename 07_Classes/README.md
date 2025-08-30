@@ -137,3 +137,38 @@ print(type(car1))
 print(type(car2))
 ```
 ---
+# Exercise 07_07 - Add Attributes to Class
+
+## Objective
+Learn how to add **attributes** to a Python class and initialize them using the constructor (`__init__`).
+
+## Code
+```python
+# 07_07_add_attributes.py
+
+class Car:
+    def __init__(self, brand: str, year: int) -> None:
+        # Type validation
+        if not isinstance(brand, str):
+            raise TypeError(f'Expected a string but got {self.__class__.__name__}')
+        if not isinstance(year, int):
+            raise TypeError(f'Expected an integer but got {self.__class__.__name__}')
+        # Value validation
+        if year < 1900 or year > 2100:
+            raise ValueError(f'Expected a year between 1900 and 2100 but got {year}')
+        self.brand = brand
+        self.year = year
+
+# Create a car object
+car = Car('Lamborghini', 2000)
+
+# Accessing attributes
+print(car.year)
+print(car.brand)
+```
+#### Output:
+```python
+2000
+Lamborghini
+```
+---
