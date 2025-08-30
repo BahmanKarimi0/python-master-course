@@ -99,3 +99,20 @@ print("Area:", rect.area())         # Output: 15
 print("Perimeter:", rect.perimeter())  # Output: 16
 ```
 ---
+# Exercise 07_05 - Class Creation
+
+## Objective
+Learn how to define a simple **class** in Python and create an **object** from it.
+
+## Code
+```python
+# 07_05_class_creation.py
+
+# Define a simple empty class
+class Car:
+    pass
+
+# Create an object (instance) of the Car class
+car1 = Car()
+```
+---
