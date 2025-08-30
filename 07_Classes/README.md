@@ -226,3 +226,20 @@ Learn how to use the **self** keyword in Python classes to access object attribu
 - Always use `self` for instance attributes to differentiate between local variables and object properties.  
 - Returning values from methods instead of printing directly allows more flexible use of the data.
 ---
+# Exercise 07_11 - __init__ Constructor with Multiple Attributes
+
+## Objective
+Learn how to use the **constructor (`__init__`)** to initialize multiple attributes in a Python class.
+
+## Exercise
+- Define a class `Car` with attributes `brand`, `year`, and `color`.  
+- Use `__init__` to initialize these attributes.  
+- Include type and value validation for each attribute.  
+- Implement `__str__` to provide a readable representation of the object.  
+- Create an object `car` with specific values and print it.
+
+## Key Takeaways
+- `__init__` allows initializing multiple attributes when creating an object.  
+- Use type checking and value validation for robust and error-proof classes.  
+- Implementing `__str__` provides a clean, human-readable output for objects.
+---
