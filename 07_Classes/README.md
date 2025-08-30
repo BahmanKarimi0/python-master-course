@@ -116,3 +116,24 @@ class Car:
 car1 = Car()
 ```
 ---
+# Exercise 07_06 - Multiple Objects
+
+## Objective
+Understand how to create multiple **objects** (instances) from the same **class** in Python.
+
+## Code
+```python
+# 07_06_multiple_objects.py
+
+class Car:
+    pass
+
+# Create two objects from the Car class
+car1 = Car()
+car2 = Car()
+
+# Check their type
+print(type(car1))
+print(type(car2))
+```
+---
