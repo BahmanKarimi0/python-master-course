@@ -194,3 +194,19 @@ Mercedes - 2022
 Ford - 2023
 ```
 ---
+# Exercise 07_09 - Object vs Class
+
+## Objective
+Understand the difference between a **class** and an **object** in Python.
+
+## Exercise
+- Define a class `Car`.  
+- Create an object `car` from this class.  
+- Verify that `car` is an instance of `Car` using `isinstance()`.  
+- Verify that `Car` itself is a class using `isinstance()` with `type`.  
+
+## Key Takeaways
+- `isinstance(object, Class)` checks if an object is an instance of a class.  
+- Classes themselves are instances of the `type` class in Python.  
+- Understanding the difference between objects and classes is fundamental in Python OOP.
+---
