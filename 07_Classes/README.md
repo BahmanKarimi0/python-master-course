@@ -210,3 +210,19 @@ Understand the difference between a **class** and an **object** in Python.
 - Classes themselves are instances of the `type` class in Python.  
 - Understanding the difference between objects and classes is fundamental in Python OOP.
 ---
+# Exercise 07_10 - Using the self Keyword
+
+## Objective
+Learn how to use the **self** keyword in Python classes to access object attributes within methods.
+
+## Exercise
+- Define a class `Car` with an attribute `brand`.  
+- Add a method `display_brand` that returns the value of `brand` using `self`.  
+- Create an object `car` with a specific brand.  
+- Call `display_brand` to access and display the brand of the car.
+
+## Key Takeaways
+- `self` refers to the **current object** and is required to access attributes and methods within the class.  
+- Always use `self` for instance attributes to differentiate between local variables and object properties.  
+- Returning values from methods instead of printing directly allows more flexible use of the data.
+---
