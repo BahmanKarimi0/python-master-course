@@ -259,4 +259,20 @@ Learn how to implement **getter** and **setter** in Python classes using the `@p
 - `@property` allows controlled access to private attributes.  
 - Setter methods can include validation logic to ensure data integrity.  
 - Using private attributes with getter/setter promotes encapsulation in Python OOP.
-```
+---
+# Exercise 07_13 - Inheritance in Python
+
+## Objective
+Learn how to implement **inheritance** and **method overriding** in Python classes.
+
+## Exercise
+- Define a parent class `Vehicle` with an attribute `brand` and a method `display_info`.  
+- Define a child class `Car` that inherits from `Vehicle` and adds a new attribute `year`.  
+- Override the `display_info` method in the child class to display both `brand` and `year`.  
+- Create an object of `Car` and call the overridden method.
+
+## Key Takeaways
+- Inheritance allows a child class to reuse attributes and methods from a parent class.  
+- Method overriding enables customizing behavior in child classes.  
+- Proper use of `super()` ensures that the parent class is correctly initialized.
+---
