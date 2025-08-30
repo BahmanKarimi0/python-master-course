@@ -243,3 +243,20 @@ Learn how to use the **constructor (`__init__`)** to initialize multiple attribu
 - Use type checking and value validation for robust and error-proof classes.  
 - Implementing `__str__` provides a clean, human-readable output for objects.
 ---
+# Exercise 07_12 - Getter and Setter with @property
+
+## Objective
+Learn how to implement **getter** and **setter** in Python classes using the `@property` decorator.
+
+## Exercise
+- Define a class `Car` with a private attribute `_brand`.  
+- Create a **getter** using `@property` to access `_brand`.  
+- Create a **setter** using `@brand.setter` to validate and set a new value.  
+- Ensure the setter checks that the value is a non-empty string.  
+- Create an object `car` and demonstrate setting and getting the `brand`.
+
+## Key Takeaways
+- `@property` allows controlled access to private attributes.  
+- Setter methods can include validation logic to ensure data integrity.  
+- Using private attributes with getter/setter promotes encapsulation in Python OOP.
+```
