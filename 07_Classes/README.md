@@ -324,3 +324,18 @@ Learn how to **override methods** in subclasses while still using the parent cla
 - The `super()` function enables calling the parent method before or after adding new logic.  
 - Useful when maintaining hierarchical class designs.
 ---
+# Exercise 07_17 - Class Methods (`@classmethod`)
+
+## Objective
+Understand how to define and use **class methods** with `@classmethod`.
+
+## Exercise
+- Define a class `Car` with a class attribute `wheels = 4`.  
+- Implement a class method `get_wheels` that returns the number of wheels.  
+- Create an instance of `Car` and call `get_wheels` using both the instance and the class itself.  
+
+## Key Takeaways
+- `@classmethod` methods take `cls` as the first parameter, which refers to the class itself.  
+- Useful when methods need to **access or modify class-level data**.  
+- Class methods can be called from both the class and its instances.
+---
