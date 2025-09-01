@@ -367,3 +367,12 @@ Learn about **encapsulation** using private and protected attributes in Python.
 - Protected attributes (`_attribute`) are a convention to indicate “use with caution.”  
 - Getter and setter methods help control access and maintain data integrity.
 ---
+## Exercise 07_20 — Multiple Inheritance
+
+**Task:**  
+- Create two base classes:  
+  - `Engine` with a method `start_engine` that prints `"Engine started"`.  
+  - `Wheels` with a method `rotate_wheels` that prints `"Wheels are rotating"`.  
+- Create a `Car` class that inherits from both classes.  
+- Instantiate a `Car` object and call both `start_engine` and `rotate_wheels`.  
+---
