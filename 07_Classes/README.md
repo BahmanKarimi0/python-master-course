@@ -308,3 +308,19 @@ Learn how to use **abstract base classes (ABC)** to enforce a common interface f
 - Abstract methods ensure that all subclasses implement the required methods.  
 - This is useful for building scalable and maintainable object-oriented systems.
 ---
+# Exercise 07_16 - Method Overriding with super()
+
+## Objective
+Learn how to **override methods** in subclasses while still using the parent class functionality with `super()`.
+
+## Exercise
+- Create a base class `Vehicle` with a method `display_info` that prints `"This is vehicle"`.  
+- Create a subclass `Car` that overrides `display_info`.  
+- Inside `Car.display_info`, first call `super().display_info()`, then print `"This is car"`.  
+- Create an instance of `Car` and call `display_info` on it.
+
+## Key Takeaways
+- Method overriding allows subclasses to **extend or modify** the behavior of parent class methods.  
+- The `super()` function enables calling the parent method before or after adding new logic.  
+- Useful when maintaining hierarchical class designs.
+---
