@@ -292,3 +292,19 @@ Understand **polymorphism** and how different classes can share the same interfa
 - **Duck typing** in Python means that "if it looks like a duck and quacks like a duck, it’s a duck."  
 - This approach makes code flexible and extensible.
 ---
+# Exercise 07_15 - Abstract Classes in Python
+
+## Objective
+Learn how to use **abstract base classes (ABC)** to enforce a common interface for all subclasses.
+
+## Exercise
+- Define an abstract base class `Vehicle` that inherits from `abc.ABC`.  
+- Inside `Vehicle`, create an abstract method `display_info`.  
+- Implement two concrete classes `Car` and `Bike` that inherit from `Vehicle` and override the `display_info` method.  
+- Create objects of both classes and call `display_info` for each.
+
+## Key Takeaways
+- Abstract classes define a **contract** that subclasses must follow.  
+- Abstract methods ensure that all subclasses implement the required methods.  
+- This is useful for building scalable and maintainable object-oriented systems.
+---
