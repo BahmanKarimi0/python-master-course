@@ -349,3 +349,21 @@ Understand how to define and use **class methods** with `@classmethod`.
 This exercise demonstrates how to use `@staticmethod` in Python OOP.
 
 ---
+# Exercise 07_19 - Encapsulation in Python
+
+## Objective
+Learn about **encapsulation** using private and protected attributes in Python.
+
+## Exercise
+- Create a class `Car` with:  
+  - A **private attribute** `__speed`.  
+  - A **protected attribute** `_color`.  
+- Implement methods `get_speed` and `set_speed` with validation.  
+- Demonstrate accessing the private attribute via methods and direct access using name mangling.  
+- Show that protected attributes can be accessed directly but should be treated with caution.
+
+## Key Takeaways
+- Private attributes (`__attribute`) are not directly accessible; Python uses name mangling.  
+- Protected attributes (`_attribute`) are a convention to indicate “use with caution.”  
+- Getter and setter methods help control access and maintain data integrity.
+---
