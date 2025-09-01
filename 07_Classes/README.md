@@ -339,3 +339,13 @@ Understand how to define and use **class methods** with `@classmethod`.
 - Useful when methods need to **access or modify class-level data**.  
 - Class methods can be called from both the class and its instances.
 ---
+## Exercise 07_18 — Static Methods
+
+**Task:**  
+- Create a class `Car`.  
+- Add a static method `is_motor_vehicle` that always returns `True`.  
+- Call the method both from an instance and directly from the class.  
+
+This exercise demonstrates how to use `@staticmethod` in Python OOP.
+
+---
