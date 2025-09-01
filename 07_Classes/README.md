@@ -276,3 +276,19 @@ Learn how to implement **inheritance** and **method overriding** in Python class
 - Method overriding enables customizing behavior in child classes.  
 - Proper use of `super()` ensures that the parent class is correctly initialized.
 ---
+# Exercise 07_14 - Polymorphism in Python
+
+## Objective
+Understand **polymorphism** and how different classes can share the same interface in Python.
+
+## Exercise
+- Create two separate classes: `Car` and `Bike`.  
+- Each class must implement a method `display_info`.  
+- Write a function that accepts a list of objects (`Car` and `Bike`) and calls `display_info` for each object.  
+- Demonstrate **polymorphism** by passing objects of different classes to the same function.
+
+## Key Takeaways
+- **Polymorphism** allows different object types to respond to the same method call.  
+- **Duck typing** in Python means that "if it looks like a duck and quacks like a duck, it’s a duck."  
+- This approach makes code flexible and extensible.
+---
