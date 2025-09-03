@@ -408,3 +408,21 @@ print(v1 + v2)
 # Output: Vector(x=6, y=7)
 ```
 ---
+## Exercise 07_23 — Operator Overloading with `__eq__`
+
+**Task:**  
+Create a `Vector` class with attributes `x` and `y`.  
+- Implement the `__eq__` method so that comparing two vectors with `==` returns `True` if both their `x` and `y` values are equal.  
+- Implement the `__str__` method for a readable string representation.  
+
+**Example:**  
+```python
+v1 = Vector(2, 3)  
+v2 = Vector(2, 3)  
+v3 = Vector(4, 5)  
+
+print(v1 == v2)  # True  
+print(v1 == v3)  # False  
+print(v1)        # Vector(x=2, y=3)
+```
+---
