@@ -477,3 +477,33 @@ print(car.speed)   # 6
 car.speed = -3     # ValueError: Speed cannot be negative
 ```
 ---
+## Exercise 07_27 — Class Attributes vs Instance Attributes
+
+**Task:**  
+Create a `Car` class with:  
+- A **class attribute** `wheel = 4`  
+- An **instance attribute** `color` set during object creation  
+
+Test the following:  
+- Access `wheel` through the class and instances.  
+- Access `color` for each instance.  
+- Change `wheel` on one instance and observe the effect on other instances and the class itself.  
+- Use `try/except` to catch invalid types for `color`.
+
+**Example Output:**  
+```python
+red
+blue
+4
+4
+4
+8
+4
+TypeError: Expected a string, got int
+```
+
+**Key Takeaways:**  
+- Class attributes are shared across all instances unless overridden by an instance.  
+- Instance attributes are unique to each object.  
+- Using `try/except` allows safe handling of invalid input.
+---
