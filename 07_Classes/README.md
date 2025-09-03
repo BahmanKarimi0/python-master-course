@@ -446,3 +446,17 @@ print(v2 < v1)   # True
 print(v1)        # Vector(x=2, y=5)
 ```
 ---
+## Exercise 07_25 — Operator Overloading with `__len__`
+
+**Task:**  
+Create a `Vector` class with attributes `x` and `y`.  
+- Implement the `__len__` method to return the Euclidean length of the vector as an integer using `len()`.  
+- Implement `__str__` for a readable string representation.  
+
+**Example:**  
+```python
+v = Vector(2, 3)
+print(len(v))  # 4
+print(v)       # Vector(x=2, y=3)
+```
+---
