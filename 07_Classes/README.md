@@ -376,3 +376,19 @@ Learn about **encapsulation** using private and protected attributes in Python.
 - Create a `Car` class that inherits from both classes.  
 - Instantiate a `Car` object and call both `start_engine` and `rotate_wheels`.  
 ---
+# Exercise 07_21 - Method Resolution Order (MRO)
+
+## Objective
+Understand how Python determines which method to call when multiple inheritance is used.
+
+## Exercise
+- Define classes `A`, `B(A)`, and `C(A)` each with a `show` method.  
+- Define class `D(B, C)` that inherits from both `B` and `C`.  
+- Create an instance of `D` and call the `show` method.  
+- Print the Method Resolution Order (`D.__mro__`) to see the order Python follows.
+
+## Key Takeaways
+- Python uses **C3 Linearization** to determine the MRO.  
+- In multiple inheritance, Python searches from left to right in the class definition.  
+- The `__mro__` attribute shows the exact order of method resolution.
+---
