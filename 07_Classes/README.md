@@ -392,3 +392,19 @@ Understand how Python determines which method to call when multiple inheritance 
 - In multiple inheritance, Python searches from left to right in the class definition.  
 - The `__mro__` attribute shows the exact order of method resolution.
 ---
+## Exercise 07_22 — Operator Overloading with `__add__`
+
+**Task:**  
+Create a class `Vector` with attributes `x` and `y`.  
+- Implement the `__add__` method so that adding two vectors (`v1 + v2`) returns a new `Vector` with summed coordinates.  
+- Implement the `__str__` method to return a readable string in the format:  
+
+
+**Example:**  
+```python
+v1 = Vector(2, 2)  
+v2 = Vector(4, 5)  
+print(v1 + v2)  
+# Output: Vector(x=6, y=7)
+```
+---
