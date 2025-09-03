@@ -426,3 +426,23 @@ print(v1 == v3)  # False
 print(v1)        # Vector(x=2, y=3)
 ```
 ---
+## Exercise 07_24 — Operator Overloading with `__lt__`
+
+**Task:**  
+Create a `Vector` class with attributes `x` and `y`.  
+- Implement the `__lt__` method so that vectors can be compared using `<`.  
+- The comparison rule:  
+  1. First compare the sum of `x + y` for both vectors.  
+  2. If the sums are equal, compare the `x` values.  
+- Implement `__str__` for readable representation.  
+
+**Example:**  
+```python
+v1 = Vector(2, 5)  
+v2 = Vector(3, 4)  
+
+print(v1 < v2)   # False  
+print(v2 < v1)   # True  
+print(v1)        # Vector(x=2, y=5)
+```
+---
