@@ -460,3 +460,20 @@ print(len(v))  # 4
 print(v)       # Vector(x=2, y=3)
 ```
 ---
+## Exercise 07_26 — Property Decorators
+
+**Task:**  
+Create a `Car` class with a private attribute `__speed`.  
+- Implement a property `speed` with a getter to return the speed.  
+- Implement a setter for `speed` that only accepts positive numbers and raises an error for negative values.  
+- Test reading and updating the speed, including error handling for invalid values.
+
+**Example:**  
+```python
+car = Car()
+print(car.speed)   # 0
+car.speed = 6
+print(car.speed)   # 6
+car.speed = -3     # ValueError: Speed cannot be negative
+```
+---
