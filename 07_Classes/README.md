@@ -507,3 +507,18 @@ TypeError: Expected a string, got int
 - Instance attributes are unique to each object.  
 - Using `try/except` allows safe handling of invalid input.
 ---
+### Exercise 07_28 - Private Attribute in the `Car` Class
+
+Create a class called `Car` that receives an `engine_number` in its constructor.  
+Follow these requirements:
+
+1. If the value passed is not of type `int`, raise a `TypeError`.  
+2. If the value is negative, raise a `ValueError`.  
+3. Store the engine number as a **private attribute** (using `__engine_number`).  
+4. Implement a method `get_engine_number` that returns the engine number.  
+5. In the `main` section:  
+   - Create an instance of the class.  
+   - Print the engine number using the method.  
+   - Access the engine number with `._Car__engine_number`.  
+   - Try to access it directly with `. __engine_number` and see the error.
+---
