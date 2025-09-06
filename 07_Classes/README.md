@@ -590,3 +590,20 @@ Create a descriptor class `NonNegative` that ensures a numeric attribute is alwa
 `exercise_07_32_descriptor_nonnegative.py`
 
 ---
+# Exercise 07_33: PositiveInteger Descriptor
+
+## Task
+Create a descriptor class `PositiveInteger` that ensures an attribute only accepts positive integers.
+
+1. Implement a class `PositiveInteger` with `__get__` and `__set__` methods.  
+   - Raise a `TypeError` if the value is not an integer.  
+   - Raise a `ValueError` if the value is negative.  
+2. Create a class `Item` that uses this descriptor for a `stock` attribute.  
+3. In `main`:  
+   - Create an instance of `Item` with a valid positive integer.  
+   - Try assigning negative or non-integer values to `stock` to test the descriptor.  
+
+## File name
+`exercise_07_33_positive_integer_descriptor.py`
+
+---
