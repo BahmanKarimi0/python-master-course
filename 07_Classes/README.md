@@ -554,3 +554,20 @@ Create a class `BankAccount` with the following requirements:
 `exercise_07_30_bank_account.py`
 
 ---
+# Exercise 07_31: Library Class
+
+## Task
+Create a `Library` class with the following requirements:
+
+1. The constructor (`__init__`) should initialize an empty list to store books.  
+2. Implement a method `add_book(title)` to add a book to the list.  
+   - Raise a `TypeError` if `title` is not a string.  
+   - Raise a `ValueError` if `title` is empty or already exists in the library.  
+3. Implement a method `remove_book(title)` to remove a book from the list.  
+   - Raise a `ValueError` if the book does not exist.  
+4. Implement a method `display_books()` to display all books in the library.  
+
+## File name
+`exercise_07_31_library_class.py`
+
+---
