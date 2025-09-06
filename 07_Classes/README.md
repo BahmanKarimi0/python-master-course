@@ -522,3 +522,17 @@ Follow these requirements:
    - Access the engine number with `._Car__engine_number`.  
    - Try to access it directly with `. __engine_number` and see the error.
 ---
+# Exercise 07_29: Person Class
+
+## Task
+Create a class `Person` with the following requirements:
+
+1. The constructor (`__init__`) should accept two attributes: `name` and `age`.  
+2. If `name` is not a string, raise a `TypeError`.  
+3. If `age` is not an integer or is negative, raise an appropriate error (`TypeError` or `ValueError`).  
+4. Implement a method `display_info` that prints the person’s name and age.  
+
+## File name
+`exercise_07_29_person_class.py`
+
+---
