@@ -571,3 +571,22 @@ Create a `Library` class with the following requirements:
 `exercise_07_31_library_class.py`
 
 ---
+# Exercise 07_32: Non-Negative Descriptor
+
+## Task
+Create a descriptor class `NonNegative` that ensures a numeric attribute is always non-negative.
+
+1. Implement a class `NonNegative` with `__get__` and `__set__` methods.  
+   - If a negative value is assigned, raise a `ValueError`.  
+2. Create a class `Product` with two attributes using this descriptor:  
+   - `price`  
+   - `quantity`  
+3. In `main`:  
+   - Create an instance of `Product`.  
+   - Try assigning both valid and invalid (negative) values to `price` and `quantity`.  
+   - Verify that negative values raise a `ValueError`.  
+
+## File name
+`exercise_07_32_descriptor_nonnegative.py`
+
+---
