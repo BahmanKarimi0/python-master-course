@@ -536,3 +536,21 @@ Create a class `Person` with the following requirements:
 `exercise_07_29_person_class.py`
 
 ---
+# Exercise 07_30: BankAccount Class
+
+## Task
+Create a class `BankAccount` with the following requirements:
+
+1. The constructor (`__init__`) should accept two attributes: `owner` and `balance`.  
+   - `owner` must be a string.  
+   - `balance` must be a non-negative number (int or float).  
+2. Implement a method `deposit(amount)` that increases the balance.  
+   - Raise a `ValueError` if `amount` is not positive.  
+3. Implement a method `withdraw(amount)` that decreases the balance.  
+   - Raise a `ValueError` if `amount` is greater than the current balance or not positive.  
+4. Implement a method `display_balance()` that prints the current balance with the owner’s name.  
+
+## File name
+`exercise_07_30_bank_account.py`
+
+---
