@@ -622,3 +622,19 @@ Create a **descriptor** called `StringLength` that:
   - Create a valid `User` instance and print the `username`.  
   - Attempt to set invalid values (too long string or non-string value) and confirm that the correct exceptions are raised.  
 ---
+# Exercise 07_35: FileManager Context Manager
+
+## Task
+Create a context manager class `FileManager` to handle file operations safely.
+
+### Requirements
+1. Implement `__enter__` to open the file and return the file object.  
+2. Implement `__exit__` to close the file, even if an exception occurs.  
+3. Support opening the file in different modes ('r', 'w', 'a', etc.).  
+
+### Usage
+```python
+with FileManager('text.txt', 'w') as f:
+    f.write('Hello World')
+```
+---
