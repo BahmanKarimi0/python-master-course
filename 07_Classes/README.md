@@ -638,3 +638,24 @@ with FileManager('text.txt', 'w') as f:
     f.write('Hello World')
 ```
 ---
+# Exercise 07_36: Timer Context Manager
+
+## Task
+Create a context manager class `Timer` that measures the execution time of a code block.
+
+### Requirements
+1. Implement `__enter__` to start the timer.  
+2. Implement `__exit__` to stop the timer and print the elapsed time in seconds.  
+3. Ensure that it works correctly even if an exception occurs inside the block.  
+4. Use `time.perf_counter()` for high-precision timing.  
+
+### Usage Example
+```python
+from time import perf_counter
+
+with Timer():
+    for i in range(100000000):
+        pass
+# Output: Finished in X.XXX seconds
+```
+---
