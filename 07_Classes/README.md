@@ -659,3 +659,20 @@ with Timer():
 # Output: Finished in X.XXX seconds
 ```
 ---
+# Exercise 07_37: Suppress Exception Context Manager
+
+## Task
+Create a context manager class `SuppressException` that suppresses any exceptions occurring inside a `with` block.
+
+### Requirements
+1. Implement `__enter__` to initialize the context manager.  
+2. Implement `__exit__` to suppress exceptions by returning `True`.  
+3. Ensure that the program continues execution even if an exception occurs in the block.  
+
+### Usage Example
+```python
+with SuppressException():
+    print(10 / 0)  # This will not raise an exception
+print("Program continues execution.")
+```
+---
