@@ -607,3 +607,18 @@ Create a descriptor class `PositiveInteger` that ensures an attribute only accep
 `exercise_07_33_positive_integer_descriptor.py`
 
 ---
+# Exercise 07_34: String Length Descriptor
+
+## Task
+Create a **descriptor** called `StringLength` that:
+
+1. Accepts only **string values**; otherwise, raises a `TypeError`.  
+2. Ensures that the string length does not exceed a maximum value (default: **10 characters**); otherwise, raises a `ValueError`.  
+3. The maximum length should be passed as a parameter when creating the descriptor (e.g., `StringLength(max_length=10)`).  
+
+## Requirements
+- Define a class `User` that uses this descriptor for its `username` attribute.  
+- In the `main` section:  
+  - Create a valid `User` instance and print the `username`.  
+  - Attempt to set invalid values (too long string or non-string value) and confirm that the correct exceptions are raised.  
+---
