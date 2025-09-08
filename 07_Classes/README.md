@@ -676,3 +676,21 @@ with SuppressException():
 print("Program continues execution.")
 ```
 ---
+# Exercise 07_38: MultiFileManager Context Manager
+
+## Task
+Create a context manager class `MultiFileManager` that handles opening multiple files at once.
+
+### Requirements
+1. Accept a list of file names and a mode (`'r'`, `'w'`, `'a'`, etc.).  
+2. Implement `__enter__` to open all files and return a list of file objects.  
+3. Implement `__exit__` to close all files.  
+4. Ensure files are properly closed even if an exception occurs inside the `with` block.
+
+### Usage Example
+```python
+with MultiFileManager(['file1.txt', 'file2.txt', 'file3.txt'], mode='w') as file_list:
+    for f in file_list:
+        f.write('Hello World')
+```
+---
