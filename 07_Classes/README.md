@@ -694,3 +694,22 @@ with MultiFileManager(['file1.txt', 'file2.txt', 'file3.txt'], mode='w') as file
         f.write('Hello World')
 ```
 ---
+## Exercise 07_39: Implement a Context Manager for Appending Text to a File
+
+Create a Context Manager called `AppendFile` that opens a file in `append` mode.  
+This Context Manager should allow writing to the file inside the `with` block, and once the block is exited, it should automatically append a given string (e.g., a separator or special marker) to the file.  
+
+### Requirements:
+- The constructor (`__init__`) should take the file name and the string to be appended.  
+- In the `__enter__` method, the file should be opened in `append` mode and returned to the user.  
+- In the `__exit__` method, the file should be closed and the specified string appended to the file.  
+
+### Example:
+If the following code is executed:
+
+```python
+with AppendFile("test.txt", "----\n") as f:
+    f.write("First line\n")
+    f.write("Second line\n")
+```
+---
