@@ -755,3 +755,18 @@ Create a context manager named `ExecutionTimer` that measures and prints the exe
 `exercise_07_41_execution_timer.py`
 
 ---
+# Exercise 07_42
+
+## Question  
+Create a context manager class called **LogFile** that:  
+1. Opens a file in append (or write) mode.  
+2. Writes `"--- Log started ---"` when the context is entered.  
+3. Allows writing log messages inside the `with` block.  
+4. Writes `"--- Log ended ---"` when the context is exited and then closes the file.  
+
+**Example usage:**  
+```python
+with LogFile("log.txt", "w") as f:
+    f.write("This is a log message.\n")
+```
+---
