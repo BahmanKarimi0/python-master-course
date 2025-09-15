@@ -740,3 +740,18 @@ with TempDir(delete=False) as (temp_dir, temp_file):
         print(f.read())
 ```
 ---
+# Exercise 07_41: ExecutionTimer Context Manager
+
+## Task
+Create a context manager named `ExecutionTimer` that measures and prints the execution time of a block of code.
+
+## Requirements
+- The constructor (`__init__`) should optionally accept a `label: str | None` parameter to identify the measured block.  
+- `__enter__` must record the start time (use `time.perf_counter()`) and return the context manager (e.g., `self`).  
+- `__exit__` must record the end time, compute the elapsed time, and print it in seconds with **3 decimal places**. If a `label` was provided, include it in the printed message (e.g., `[Label] Finished in 0.123 seconds`).  
+- The context manager must behave correctly even if an exception occurs inside the `with` block (i.e., still measure and print elapsed time).
+
+## File name
+`exercise_07_41_execution_timer.py`
+
+---
