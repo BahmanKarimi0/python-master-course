@@ -1,4 +1,4 @@
-# Object-Oriented Programming (OOP) in Python — Exercise Series
+Of# Object-Oriented Programming (OOP) in Python — Exercise Series
 
 This repository is a structured journey through **100 OOP exercises in Python**, starting from the simplest fundamentals and gradually moving toward complex, interview-level challenges.  
 The goal is to practice and deeply understand Python’s object-oriented features by building from **basic class design** to **advanced topics** like descriptors, metaclasses, and design patterns.
@@ -711,5 +711,32 @@ If the following code is executed:
 with AppendFile("test.txt", "----\n") as f:
     f.write("First line\n")
     f.write("Second line\n")
+```
+---
+## Exercise 07_40: Context Manager for Temporary Directory and File
+
+Create a Context Manager called `TempDir` that creates a temporary directory and a temporary file inside it when entering the `with` block, and optionally deletes the directory and its contents when exiting the block.
+
+### Requirements:
+- The constructor (`__init__`) should accept the following optional parameters:
+  - `dir`: base directory where the temp directory will be created.
+  - `dir_prefix`: prefix for the temporary directory name.
+  - `file_prefix`: prefix for the temporary file name.
+  - `file_suffix`: suffix for the temporary file.
+  - `delete`: boolean to indicate whether the directory should be deleted upon exit.
+- In the `__enter__` method:
+  - Create the temporary directory and file.
+  - Return a tuple `(temp_dir_name, temp_file_name)`.
+- In the `__exit__` method:
+  - If `delete` is True, remove the directory and its contents.
+
+### Example:
+```python
+with TempDir(delete=False) as (temp_dir, temp_file):
+    print("Temporary directory created:", temp_dir)
+    with open(temp_file, 'w+') as f:
+        f.write("Hello World")
+        f.seek(0)
+        print(f.read())
 ```
 ---
