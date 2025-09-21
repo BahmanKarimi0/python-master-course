@@ -770,3 +770,21 @@ with LogFile("log.txt", "w") as f:
     f.write("This is a log message.\n")
 ```
 ---
+# Exercise 07_43 - Change Directory Context Manager
+
+## Question
+Create a context manager called `ChangeDirectory` that temporarily changes the current working directory to a specified path. When exiting the context, the working directory should be restored to its original location.
+
+### Requirements
+- Implement the `__enter__` method to change to the new directory and return the current path.  
+- Implement the `__exit__` method to restore the original directory.  
+- Ensure that the context manager can be used with a `with` statement.
+
+### Example
+```python
+with ChangeDirectory(r"c:\\") as new_dir:
+    print("Now in:", new_dir)
+
+print("Back to:", os.getcwd())
+```
+---
